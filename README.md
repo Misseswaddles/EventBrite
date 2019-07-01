@@ -29,15 +29,15 @@ new EventItem() {EventTypeId=(1-3),
 
 
 
-/////Below is a description of an event item////
-Event Item: 
+/////Below is a description of an event item//// </br>
+Event Item: </br>
 EventVenue="Nectar" </br>
-EventAddress="Fremont Seattle"
-EventCategory="Music"
-EventName="banjo fun"
-EventDescription="Playing Banjos all night"  //Simple event description
-EventFavorite=true/false         //This will be boolean, set to False
-Price=20.00
-PictureUrl="http://Awesome80sHits"     //This is the image for the hosting event
-EventUrl="http://FremontNectar.com"     //This is the website for the hosting event
+EventAddress="Fremont Seattle" </br>
+EventCategory="Music" </br>
+EventName="banjo fun" </br>
+EventDescription="Playing Banjos all night"  //Simple event description </br>
+EventFavorite=true/false         //This will be boolean, set to False </br>
+Price=20.00  </br>
+PictureUrl="http://Awesome80sHits"     //This is the image for the hosting event </br>
+EventUrl="http://FremontNectar.com"     //This is the website for the hosting event </br>
 
