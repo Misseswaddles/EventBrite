@@ -31,7 +31,7 @@ new EventItem() {EventTypeId=(1-3),
 
 /////Below is a description of an event item////
 Event Item: 
-EventVenue="Nectar"
+EventVenue="Nectar" </br>
 EventAddress="Fremont Seattle"
 EventCategory="Music"
 EventName="banjo fun"
