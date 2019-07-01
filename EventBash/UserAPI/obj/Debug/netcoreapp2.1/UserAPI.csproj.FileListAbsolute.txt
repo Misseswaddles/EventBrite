@@ -1,0 +1,3 @@
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.csproj.CoreCompileInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfoInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfo.cs
