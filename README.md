@@ -63,6 +63,13 @@ EventPrice=20.00  </br>
 EventPictureUrl="http://Awesome80sHits"     //This is the image for the hosting event </br>
 EventUrl="http://FremontNectar.com"     //This is the website for the hosting event </br>
 
+Event Domains (the models):
+EventCategory:   (Music, Kids, Drama, Outdoor, Dance, Food, Wine)
+EventItem: (above)
+EventVenue:  
+
+
+
 ////////CategoryDescription/////</br>
 CategoryId: (auto Primary Key) </br>
 CategoryName: "Music" (choices Music, Kids, Drama, Outdoor, Dance, Food, Wine) </br>
