@@ -1,6 +1,17 @@
 # EventBrite
 EventBrite
 
+
+Process:
+We will work on one specific Visual Studio project.
+Each person will work within their own API project.
+As a general practice, do not modify code in another person's API, unless you are working with the author of that API.
+Document Any changes and update your readme for your project.
+
+
+
+
+
 Services:
 
 1. Authentication/Login/permissions
