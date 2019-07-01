@@ -14,6 +14,8 @@ Services:
 9. Create User account
 10. Admin API authentication (user information, enable user, disable user, disable events, enable events, access database.)
 
+//LInk to Mapquest API to show the location.
+
 
 //Example of what an event item would look like in Catalog:
 List<EventItem>()
@@ -37,7 +39,27 @@ EventCategory="Music" </br>
 EventName="banjo fun" </br>
 EventDescription="Playing Banjos all night"  //Simple event description </br>
 EventFavorite=true/false         //This will be boolean, set to False </br>
+EventTicketsAvailable=100 </br>
+EventTimeStart=10am (date/time object)
+EventTimeEnd=6pm (date/time object)
+EventDateStart=7/6/19 (date/time object)
+EventEndDate-7/6/19 (date/time object)
 Price=20.00  </br>
 PictureUrl="http://Awesome80sHits"     //This is the image for the hosting event </br>
 EventUrl="http://FremontNectar.com"     //This is the website for the hosting event </br>
+
+
+/////////User information ///</br>
+FirstName: </br>
+LastName: </br>
+Addresss: </br>
+Email: </br>
+Phone: </br>
+CardNumber: </br>
+CompanyOrIndividual: "string" </br>
+CanCreateEvent: false/true (default is enabled, but can be disabled, diaabled until they are enabled) </br>
+
+
+
+
 
