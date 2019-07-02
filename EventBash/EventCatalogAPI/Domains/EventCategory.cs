@@ -7,13 +7,9 @@ namespace EventCatalogAPI.Domains
 {
     public class EventCategory //Analagous to Catatlog Typed
     {
+        public int Id { get; set; }
 
+        public string Type { get; set; }
 
-        //This is tied to EventVenue and EventCategory
-        public int EventCategoryId { get; set; } //foregin key
-
-
-        public int EventVenueId { get; set; } //foreign key
-        public string Category { get; set; }
     }
 }
