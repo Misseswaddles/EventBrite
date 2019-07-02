@@ -109,7 +109,7 @@ CardExpire: </br>
 CardCV: </br>
 CompanyOrIndividual: "string" </br>
 CanCreateEvent: false/true (default is enabled, but can be disabled, diaabled until they are enabled) </br>
-Permissions:  1,2,3 ( Admin, Host or General)
+UserType:  1,2,3 ( Admin, Host or General) //this relates to permissions </br>
 Favorites: 
 
 
