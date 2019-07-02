@@ -1,5 +1,6 @@
 ﻿using EventCatalogAPI.Domains;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,5 +25,19 @@ namespace EventCatalogAPI.Data
         //below it would be a best practice to change EventItems to EventItem
         public DbSet<EventItems> EventItem { get; set; } //note, this should be edited
 
+
+        //Ceate the primary keys for Entity Framework
+        protected override void OnModelCreating(ModelBuilder modelBuilder )
+
+        //The EventSeed file will create a method to get 
+        //GetPreConfiguredEventItems, etc.
+        {
+            modelBuilder.Entity<EventVenue>(ConfigureEventVenue)
+        }
+
+        private void ConfigureEventVenue(EntityTypeBuilder<EventVenue> obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
