@@ -18,7 +18,11 @@ namespace EventCatalogAPI.Data
 
         public DbSet<EventCategory> EventCategories { get; set; }
 
+        public DbSet<EventVenue> EventVenues { get; set; }
 
+
+        //below it would be a best practice to change EventItems to EventItem
+        public DbSet<EventItems> EventItem { get; set; } //note, this should be edited
 
     }
 }
