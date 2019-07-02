@@ -5,7 +5,11 @@ using System.Threading.Tasks;
 
 namespace EventCatalogAPI.Domains
 {
-    public class EventVenue
+    public class EventVenue //analagous to CatalogBrand
     {
+        public int Id { get; set; } //
+
+        public string Venue { get; set; }
+
     }
 }
