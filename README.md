@@ -55,10 +55,10 @@ EventName="banjo fun" </br>
 EventDescription="Playing Banjos all night"  //Simple event description </br>
 EventFavorite=true/false         //This will be boolean, set to False </br>
 EventTicketsAvailable=100 </br>
-EventTimeStart=10am (date/time object)
-EventTimeEnd=6pm (date/time object)
-EventDateStart=7/6/19 (date/time object)
-EventEndDate-7/6/19 (date/time object)
+EventTimeStart=10am (date/time object) </br>
+EventTimeEnd=6pm (date/time object) </br>
+EventDateStart=7/6/19 (date/time object) </br>
+EventEndDate-7/6/19 (date/time object) </br>
 EventPrice=20.00  </br>
 EventPictureUrl="http://Awesome80sHits"     //This is the image for the hosting event </br>
 EventUrl="http://FremontNectar.com"     //This is the website for the hosting event </br>
