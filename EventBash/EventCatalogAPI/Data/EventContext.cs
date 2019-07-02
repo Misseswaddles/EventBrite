@@ -39,8 +39,27 @@ namespace EventCatalogAPI.Data
 
         private void ConfigureEventItems(EntityTypeBuilder<EventItems> builder)
         {
-            builder.ToTable("EventCatalog");//the actual name of the event catalog
+            builder.ToTable("Events");//the actual name of the event catalog
             builder.Property(c => c.Id)
+                .IsRequired()
+                .ForSqlServerUseSequenceHiLo("events_hilo");
+
+            builder.Property(c => c.EventName)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(c => c.EventPrice)
+                .IsRequired();
+
+            //Here, are the relationships between Events and the venue and category
+            builder.HasOne(c => c.EventCategory) //red will go away when Items is successfully entered
+                .WithMany()
+                .HasForeignKey(c => EventCategoryId);
+
+            builder.HasOne(c => c.EventVenue) //red will go away when Items is successfully entered
+                .withMany()
+                .HasForeignKey(c => EventVenueId);
+
             
         }
 
