@@ -1,10 +1,18 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 
-public class UserSeed
+public static class UserSeed
 {
-	public UserSeed()
-	{
-	
-	}
+    public static void Seed(UserContext context)
+    {
+        context.Database.Migrate();
+
+       
+    }
+
+    private static Permissions[] GetPreConfiguredUserPermissions()
+    {
+        throw new NotImplementedException();
+    }
 }

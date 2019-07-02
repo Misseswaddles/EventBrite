@@ -1,3 +1,9 @@
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.csproj.CoreCompileInputs.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfoInputs.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfo.cs
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.csprojAssemblyReference.cache
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.csproj.CoreCompileInputs.cache
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.RazorAssemblyInfo.cache
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.RazorAssemblyInfo.cs
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfoInputs.cache
+C:\Git_Repos\Assignment3\EventBash\UserAPI\obj\Debug\netcoreapp2.1\UserAPI.AssemblyInfo.cs
