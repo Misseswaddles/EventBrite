@@ -6,7 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domains\" />
+    <Compile Remove="Domains\**" />
+    <Content Remove="Domains\**" />
+    <EmbeddedResource Remove="Domains\**" />
+    <None Remove="Domains\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
