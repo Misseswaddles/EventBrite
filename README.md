@@ -50,7 +50,7 @@ EventStreetAddress="Fremont Seattle" </br>
 EventCity="Seattle"</br>
 EventState="Washington"</br>
 EventZip=90201 </br>
-EventCategory="Music" (Music, Kids, Drama, Outdoor, Dance, Food, Wine)   (Foreign key) </br>
+EventCategory="Music" (Music, Kids, Drama, Outdoor, Dance, Food, Wine, Seminars)   (Foreign key) </br>
 EventName="banjo fun" </br>
 EventDescription="Playing Banjos all night"  //Simple event description </br>
 EventFavorite=true/false         //This will be boolean, set to False </br>
@@ -72,7 +72,7 @@ EventVenue:
 
 ////////CategoryDescription/////</br>
 CategoryId: (auto Primary Key) </br>
-CategoryName: "Music" (choices Music, Kids, Drama, Outdoor, Dance, Food, Wine) </br>
+CategoryName: "Music" (choices Music, Kids, Drama, Outdoor, Dance, Food, Wine, Seminars) </br>
 CategoryDescription: "Live music" </br>
 
 ///User Favorites//   this table will store the user's favorite events</br>
