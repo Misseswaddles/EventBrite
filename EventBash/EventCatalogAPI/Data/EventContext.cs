@@ -32,7 +32,7 @@ namespace EventCatalogAPI.Data
         //The EventSeed file will create a method to get 
         //GetPreConfiguredEventItems, etc.
         {
-            modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
+            modelBuilder.Entity<EventVenue>(ConfigureEventVenue)
         }
 
         private void ConfigureEventVenue(EntityTypeBuilder<EventVenue> obj)
