@@ -17,13 +17,15 @@ namespace EventCatalogAPI.Data
         }
         */
 
-        public DbSet<EventCategory> EventCategories { get; set; }
+        public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
 
-        public DbSet<EventVenue> EventVenues { get; set; }
+        public DbSet<EventVenue> EventVenues { get; set; } // EventVenues is the table
 
 
         //below it would be a best practice to change EventItems to EventItem
-        public DbSet<EventItems> EventItem { get; set; } //note, this should be edited
+        //Selvi - Updated the folder name under Domains to EventItem and the below table name to EventItems as mentioned in class as a good practice
+        public DbSet<EventItem> EventItems { get; set; } //note, this should be edited ---> Update done by Selvi
+
 
 
         //Ceate the primary keys for Entity Framework
@@ -34,10 +36,10 @@ namespace EventCatalogAPI.Data
         {
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
-            modelBuilder.Entity<EventItems>(ConfigureEventItems);
+            modelBuilder.Entity<EventItem>(ConfigureEventItem); //Selvi -> updated ConfigureEventItems to ConfigureEventItem to make it more sensible 
         }
 
-        private void ConfigureEventItems(EntityTypeBuilder<EventItems> builder)
+        private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
             builder.Property(c => c.EventId)
@@ -48,17 +50,17 @@ namespace EventCatalogAPI.Data
                 .IsRequired()
                 .HasMaxLength(100);
 
-            builder.Property(c => c.EventPrice)
+            builder.Property(c => c.EventCost) // Selvi -> have declared a property as EventCost. Check it out
                 .IsRequired();
 
             //Here, are the relationships between Events and the venue and category
             builder.HasOne(c => c.EventCategory) //red will go away when Items is successfully entered
                 .WithMany()
-                .HasForeignKey(c => EventCategoryId);
+                .HasForeignKey(c => c.EventCategoryId);
 
             builder.HasOne(c => c.EventVenue) //red will go away when Items is successfully entered
                 .WithMany()
-                .HasForeignKey(c => EventVenueId);
+                .HasForeignKey(c => c.EventVenueId);
 
             
         }
@@ -71,7 +73,7 @@ namespace EventCatalogAPI.Data
                 .IsRequired() //primary key
                 .ForSqlServerUseSequenceHiLo("event_category_hilo"); //
 
-            builder.Property(c => c.Type) //would be good to change type member to category.
+            builder.Property(c => c.Category) //would be good to change type member to category.
                 .IsRequired()
                 .HasMaxLength(100);
         }

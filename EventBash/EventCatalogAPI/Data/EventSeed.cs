@@ -20,9 +20,9 @@ namespace EventCatalogAPI.Data
                 context.SaveChanges();
             }
 
-            if(!context.EventItem.Any())
+            if(!context.EventItems.Any())
             {
-                context.EventItem.AddRange(GetPreconfiguredEventItems());
+                context.EventItems.AddRange(GetPreconfiguredEventItems());
 
                 context.SaveChanges();
             }
@@ -30,11 +30,11 @@ namespace EventCatalogAPI.Data
 
         }
 
-        private static IEnumerable<EventItems> GetPreconfiguredEventItems()
+        private static IEnumerable<EventItem> GetPreconfiguredEventItems()
         {
-           return new List<EventItems>
+            return new List<EventItem>
            {
-               new EventItems()
+               new EventItem()
                {
                    ///Here, add your items you created yesterday.
 
@@ -42,7 +42,7 @@ namespace EventCatalogAPI.Data
 
                }
 
-           }
+           };
         }
 
         private static IEnumerable<EventVenue> GetPreconfiguredEventVenues()

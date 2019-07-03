@@ -129,7 +129,13 @@ CreateEvent: true/false
 EnableEvent: true/false
 EnableUser: true/false
 
-//Test Joylene
+
+//Admin permissions </br>
+//There are usually multiple administrative roles, but for this project we may just want to have one admin with different capabilities for example </br>
+//We may want to focus on the front facing services first, I'm concerned some of these permissions are beyond our scope </br>
+Authentication: true // Access to privileged information (database) "Users locked out of their account- verifying identity"" </br>
+Helpdesk: true //Access to "tickets" for troubleshooting customer concerns </br>
+Compliance: true // Ability to enable/disable events/users-inappropriate activity </br>
 
 
 
