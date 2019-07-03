@@ -50,17 +50,17 @@ namespace EventCatalogAPI.Data
                 .IsRequired()
                 .HasMaxLength(100);
 
-            builder.Property(c => c.EventPrice) // Selvi -> have declared a property as EventCost. Check it out
+            builder.Property(c => c.EventCost) // Selvi -> have declared a property as EventCost. Check it out
                 .IsRequired();
 
             //Here, are the relationships between Events and the venue and category
             builder.HasOne(c => c.EventCategory) //red will go away when Items is successfully entered
                 .WithMany()
-                .HasForeignKey(c => EventCategoryId);
+                .HasForeignKey(c => c.EventCategoryId);
 
             builder.HasOne(c => c.EventVenue) //red will go away when Items is successfully entered
                 .WithMany()
-                .HasForeignKey(c => EventVenueId);
+                .HasForeignKey(c => c.EventVenueId);
 
             
         }
