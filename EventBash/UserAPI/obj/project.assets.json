@@ -11868,25 +11868,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\keyro\\.nuget\\packages\\": {},
+    "C:\\Users\\Selvanayaki\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\UserAPI\\UserAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Selvanayaki\\source\\EventBriteAassignment\\EventBash\\UserAPI\\UserAPI.csproj",
       "projectName": "UserAPI",
-      "projectPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\UserAPI\\UserAPI.csproj",
-      "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\UserAPI\\obj\\",
+      "projectPath": "C:\\Users\\Selvanayaki\\source\\EventBriteAassignment\\EventBash\\UserAPI\\UserAPI.csproj",
+      "packagesPath": "C:\\Users\\Selvanayaki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Selvanayaki\\source\\EventBriteAassignment\\EventBash\\UserAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Selvanayaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
