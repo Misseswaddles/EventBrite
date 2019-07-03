@@ -30,11 +30,11 @@ namespace EventCatalogAPI.Data
 
         }
 
-        private static IEnumerable<EventItems> GetPreconfiguredEventItems()
+        private static IEnumerable<EventItem> GetPreconfiguredEventItems()
         {
-           return new List<EventItems>
+           return new List<EventItem>
            {
-               new EventItems()
+               new EventItem()
                {
                    ///Here, add your items you created yesterday.
 

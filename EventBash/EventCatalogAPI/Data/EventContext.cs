@@ -24,7 +24,7 @@ namespace EventCatalogAPI.Data
 
         //below it would be a best practice to change EventItems to EventItem
         //Selvi - Updated the folder name under Domains to EventItem and the below table name to EventItems as mentioned in class as a good practice
-        public DbSet<EventItems> EventItems { get; set; } //note, this should be edited ---> Update done by Selvi
+        public DbSet<EventItem> EventItems { get; set; } //note, this should be edited ---> Update done by Selvi
 
 
 
@@ -36,10 +36,10 @@ namespace EventCatalogAPI.Data
         {
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
-            modelBuilder.Entity<EventItems>(ConfigureEventItems); // Check EventItems with Carol
+            modelBuilder.Entity<EventItem>(ConfigureEventItem); //Selvi -> updated ConfigureEventItems to ConfigureEventItem to make it more sensible 
         }
 
-        private void ConfigureEventItems(EntityTypeBuilder<EventItems> builder)
+        private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
             builder.Property(c => c.EventId)
@@ -50,7 +50,7 @@ namespace EventCatalogAPI.Data
                 .IsRequired()
                 .HasMaxLength(100);
 
-            builder.Property(c => c.EventPrice)
+            builder.Property(c => c.EventPrice) // Selvi -> have declared a property as EventCost. Check it out
                 .IsRequired();
 
             //Here, are the relationships between Events and the venue and category
