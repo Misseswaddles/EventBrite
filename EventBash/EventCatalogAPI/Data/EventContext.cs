@@ -17,13 +17,15 @@ namespace EventCatalogAPI.Data
         }
         */
 
-        public DbSet<EventCategory> EventCategories { get; set; }
+        public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
 
-        public DbSet<EventVenue> EventVenues { get; set; }
+        public DbSet<EventVenue> EventVenues { get; set; } // EventVenues is the table
 
 
         //below it would be a best practice to change EventItems to EventItem
-        public DbSet<EventItems> EventItem { get; set; } //note, this should be edited
+        //Selvi - Updated the folder name under Domains to EventItem and the below table name to EventItems as mentioned in class as a good practice
+        public DbSet<EventItems> EventItems { get; set; } //note, this should be edited ---> Update done by Selvi
+
 
 
         //Ceate the primary keys for Entity Framework
@@ -34,7 +36,7 @@ namespace EventCatalogAPI.Data
         {
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
-            modelBuilder.Entity<EventItems>(ConfigureEventItems);
+            modelBuilder.Entity<EventItems>(ConfigureEventItems); // Check EventItems with Carol
         }
 
         private void ConfigureEventItems(EntityTypeBuilder<EventItems> builder)
