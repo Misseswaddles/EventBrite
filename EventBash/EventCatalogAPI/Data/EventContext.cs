@@ -73,7 +73,7 @@ namespace EventCatalogAPI.Data
                 .IsRequired() //primary key
                 .ForSqlServerUseSequenceHiLo("event_category_hilo"); //
 
-            builder.Property(c => c.Type) //would be good to change type member to category.
+            builder.Property(c => c.Category) //would be good to change type member to category.
                 .IsRequired()
                 .HasMaxLength(100);
         }
