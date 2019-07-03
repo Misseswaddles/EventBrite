@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\EventBash",
-    "\\EventBash\\UserAPI",
-    "\\EventBash\\UserAPI\\Domain"
+    "\\EventBash\\UserAPI"
   ],
   "PreviewInSolutionExplorer": false
 }
