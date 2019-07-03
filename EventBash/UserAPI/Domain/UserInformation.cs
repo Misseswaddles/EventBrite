@@ -7,7 +7,7 @@ namespace UserAPI.Domain
 {
     public class UserInformation
     {
-        public int Id { get; set; } // Auto Generated
+        public int Id { get; set; } // Auto Generated..
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
