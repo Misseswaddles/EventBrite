@@ -40,7 +40,7 @@ namespace EventCatalogAPI.Data
         private void ConfigureEventItems(EntityTypeBuilder<EventItems> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
-            builder.Property(c => c.Id)
+            builder.Property(c => c.EventId)
                 .IsRequired()
                 .ForSqlServerUseSequenceHiLo("events_hilo");
 
@@ -57,7 +57,7 @@ namespace EventCatalogAPI.Data
                 .HasForeignKey(c => EventCategoryId);
 
             builder.HasOne(c => c.EventVenue) //red will go away when Items is successfully entered
-                .withMany()
+                .WithMany()
                 .HasForeignKey(c => EventVenueId);
 
             
