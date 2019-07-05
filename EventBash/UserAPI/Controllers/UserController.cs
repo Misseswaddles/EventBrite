@@ -44,6 +44,26 @@ namespace UserAPI.Controllers
             return Ok(model);
 
         }
+        [HttpGet]
+        [Route("items/{id:int}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest("Incorrect Id!");
+
+            }
+
+            var user = await _context.UserInformation.SingleOrDefaultAsync(c => c.Id == id);
+
+            if (user == null)
+            {
+                return NotFound("User information not found");
+            }
+
+            return Ok(user);
+
+        }
  
     }
 }
