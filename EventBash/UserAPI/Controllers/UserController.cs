@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UserAPI.Data;
+using UserAPI.Domain;
+using UserAPI.ViewModels;
 
 namespace UserAPI.Controllers
 {
@@ -32,7 +34,14 @@ namespace UserAPI.Controllers
                   .Skip(pageSize * pageIndex)
                   .Take(pageSize)
                   .ToListAsync();
-            return Ok(users);
+            var model = new PaginatedUsersViewModel<UserInformation>
+            {
+                PageSize = pageSize,
+                PageIndex = pageIndex,
+                Count = usersCount,
+                Data = users
+            };
+            return Ok(model);
 
         }
  
