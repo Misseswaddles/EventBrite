@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EventBash",
-    "\\EventBash\\EventCatalogAPI",
     "\\EventBash\\EventCatalogAPI\\Data",
     "\\EventBash\\EventCatalogAPI\\Domains",
-    "\\EventBash\\UserAPI"
+    "\\EventBash\\UserAPI",
+    "\\EventBash\\UserAPI\\Controllers"
   ],
-  "SelectedNode": "\\EventBash\\EventCatalogAPI\\Data\\EventContext.cs",
+  "SelectedNode": "\\EventBash\\UserAPI\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

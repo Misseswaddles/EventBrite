@@ -26,10 +26,27 @@ namespace EventCatalogAPI.Data
 
                 context.SaveChanges();
             }
+            if (!context.EventCategories.Any())
+            {
+                context.EventCategories.AddRange(GetPreconfiguredEventCategories());
 
+                context.SaveChanges();
+            }
 
         }
 
+        private static IEnumerable<EventCategory> GetPreconfiguredEventCategories()
+        {
+            return new List<EventCategory>
+            {
+                new EventCategory() {Category = "Music"},
+                new EventCategory() {Category = "Food & Drink" },
+                new EventCategory() {Category = "Seminars" },
+                new EventCategory() {Category = "Film & Media"},
+                new EventCategory() {Category = "Kids" },
+                new EventCategory() {Category = "Other"}
+            };
+        }
         private static IEnumerable<EventItem> GetPreconfiguredEventItems()
         {
             return new List<EventItem>
