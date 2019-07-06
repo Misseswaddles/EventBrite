@@ -1,0 +1,3 @@
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.csproj.CoreCompileInputs.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfoInputs.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfo.cs
