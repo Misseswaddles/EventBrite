@@ -7,7 +7,7 @@ namespace HelpAndContactUsAPI.Domain
 {
     public class Help
     {
-        public int Id { get; set; } //Auto genrated
+        public int Id { get; set; } //Auto genrated........
         public string Query { get; set; }
         public int Answer { get; set; }
     }
