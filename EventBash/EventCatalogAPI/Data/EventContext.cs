@@ -54,7 +54,7 @@ namespace EventCatalogAPI.Data
                 .IsRequired();
 
             //Here, are the relationships between Events and the venue and category
-            builder.HasOne(c => c.EventCategory) //red will go away when Items is successfully entered
+            builder.HasOne(c => c.EventCategory) //red will go away when Items is successfully entered. Letter "c" is just an example can use anything
                 .WithMany()
                 .HasForeignKey(c => c.EventCategoryId);
 
