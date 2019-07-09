@@ -33,7 +33,7 @@ new EventItem() { EventCategory=3,
 
 **Below is a blank item that you can use to create an EventItem**
 <pre>
-new EventItem() { EventCategory=  , EventVenue=  , EventStartDate= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventTime=  , EventPictureUrl=  , EventUrl= }
+new EventItem() { EventCategory=  , EventVenue=  , EventStartDate= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventEndTime=  , EventPictureUrl=  , EventUrl= }
 
 </pre>
 
