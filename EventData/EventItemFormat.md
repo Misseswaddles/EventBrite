@@ -15,7 +15,7 @@ new EventItem() { EventCategoryId=3,
                     EventDescription="Talks on a moment of change from one position to another,
                     whether it be in relationships, beliefs, cultures, perspectives or the world",</br> 
                     EventName="TEDxSeattle 2019: SHIFT",</br>
-                    EventCost=20.00,</br>
+                    EventCost=20.00m,  //note you have to add the m suffix when declaring a decimal.</br>
                     EventAddress="321 Mercer St",</br>
                     EventCity="Seattle",</br> 
                     EventState="Washington",</br>
