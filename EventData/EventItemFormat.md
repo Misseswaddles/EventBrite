@@ -33,7 +33,7 @@ new EventItem() { EventCategory=3,
 
 **Below is a blank item that you can use to create an EventItem**
 <pre>
-new EventItem() { EventCategory=  , EventVenue=  , EventStartDate= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventTime=  , EventPictureUrl=  , EventUrl= }
+new EventItem() { EventCategory=  , EventVenue=  , EventStartDate= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventEndTime=  , EventPictureUrl=  , EventUrl= }
 
 </pre>
 
@@ -44,31 +44,31 @@ new EventCategory() {Category = "Music"},  1   </br>
 new EventCategory() {Category = "Food & Drink"}, 2  </br>
 new EventCategory() {Category = "Seminars" },  3    </br>
 new EventCategory() {Category = "Film & Media"}, 4  </br>
-new EventCategory() {Category = "Kids" },  5 
-new EventCategory() {Category = "Other"} 6
+new EventCategory() {Category = "Kids" },  5  </br>
+new EventCategory() {Category = "Other"} 6   </br>
 
 So, if you have a music category you would add use EventCategory=1
 
 **Below is the EventVenue Domain**
-
+<pre>
 new EventVenue() {Venue= "Chateau Ste Michelle"},  1
 new EventVenue() {Venue= "Neumos"},      2
 new EventVenue() {Venue= "Lauren Ashton Cellars"}, 3
 new EventVenue() {Venue= "Magnussen Park Hangar 30"}, 4
 new EventVenue() {Venue= "Bottle House Seattle"}, 5
 new EventVenue() {Venue= "McCaw Hall"} 6
-
+</pre>
 
 
 **Below is the EventStartDate Domain**
-
+<pre>
 new EventStartDate() {StartDate = "11/23/19" },  1
 new EventStartDate() {StartDate = "7/14/19"},  2
 new EventStartDate() {StartDate = "8/22/19"},  3
 new EventStartDate() {StartDate = "7/27/19"},  4
 new EventStartDate() {StartDate = "8/4/19"},  5
 new EventStartDate() {StartDate = "9/6/19"}  6
-
+</pre>
 
 
 
