@@ -13,14 +13,14 @@ namespace EventCatalogAPI.Data
             //context.Database.Migrate(); //Not yet ready until Events API is completed.
 
             //Only fill up the database if you don't have anything in there.
-            if(!context.EventVenues.Any())
+            if (!context.EventVenues.Any())
             {
                 context.EventVenues.AddRange(GetPreconfiguredEventVenues());
 
                 context.SaveChanges();
             }
 
-            if(!context.EventItems.Any())
+            if (!context.EventItems.Any())
             {
                 context.EventItems.AddRange(GetPreconfiguredEventItems());
 
@@ -33,6 +33,29 @@ namespace EventCatalogAPI.Data
                 context.SaveChanges();
             }
 
+            if (!context.EventStartDates.Any())
+            {
+                context.EventStartDates.AddRange(GetPreconfiguredEventStartDates()) ;
+
+                context.SaveChanges();
+            }
+
+
+        }
+
+        private static IEnumerable<EventStartDate> GetPreconfiguredEventStartDates()
+        {
+            return new List<EventStartDate>   //This needs to be completed based on the seed data
+            {
+                new EventStartDate() {StartDate = "11/23/19" },
+                new EventStartDate() {StartDate = "7/14/19"},
+                new EventStartDate() {StartDate = "8/22/19"},
+                new EventStartDate() {StartDate = "7/27/19"},
+                new EventStartDate() {StartDate = "8/4/19"},
+                new EventStartDate() {StartDate = "9/6/19"}
+
+
+            };
         }
 
         private static IEnumerable<EventCategory> GetPreconfiguredEventCategories()

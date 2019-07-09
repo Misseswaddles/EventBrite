@@ -21,6 +21,8 @@ namespace EventCatalogAPI.Data
 
         public DbSet<EventVenue> EventVenues { get; set; } // EventVenues is the table
 
+        public DbSet<EventStartDate> EventStartDates { get; set; }
+
 
         //below it would be a best practice to change EventItems to EventItem
         //Selvi - Updated the folder name under Domains to EventItem and the below table name to EventItems as mentioned in class as a good practice
@@ -37,7 +39,10 @@ namespace EventCatalogAPI.Data
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
             modelBuilder.Entity<EventItem>(ConfigureEventItem); //Selvi -> updated ConfigureEventItems to ConfigureEventItem to make it more sensible 
+            modelBuilder.Entity<EventStartDate>(ConfigurEventStartDates);
         }
+
+
 
         private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
@@ -63,6 +68,19 @@ namespace EventCatalogAPI.Data
                 .HasForeignKey(c => c.EventVenueId);
 
             
+        }
+
+        private void ConfigurEventStartDates(EntityTypeBuilder<EventStartDate> builder)
+        {
+            builder.ToTable("EventStartDates");
+
+            builder.Property(c => c.Id)
+                .IsRequired()
+                .ForSqlServerUseSequenceHiLo("event_start_date_hilo");
+
+            builder.Property(c => c.StartDate)
+                .IsRequired()
+                .HasMaxLength(50);
         }
 
         private void ConfigureEventCategory(EntityTypeBuilder<EventCategory> builder)
