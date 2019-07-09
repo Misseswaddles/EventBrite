@@ -67,6 +67,10 @@ namespace EventCatalogAPI.Data
                 .WithMany()
                 .HasForeignKey(c => c.EventVenueId);
 
+            builder.HasOne(c => c.EventStartDate)
+                .WithMany()
+                .HasForeignKey(c => c.EventStartDateId);
+
             
         }
 
