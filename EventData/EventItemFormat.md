@@ -9,13 +9,13 @@ Take information from a real event--then the images and url are already there fo
 Below is an example for the TedX seattle event in November </br>
 TedEx Seattle Nov </br>
 <pre>
-new EventItem() { EventCategory=3, 
-                    EventVenue=6, 
-                    EventStartDate=1,
+new EventItem() { EventCategoryId=3, 
+                    EventVenueId=6, 
+                    EventStartDateId=1,
                     EventDescription="Talks on a moment of change from one position to another,
                     whether it be in relationships, beliefs, cultures, perspectives or the world",</br> 
                     EventName="TEDxSeattle 2019: SHIFT",</br>
-                    EventCost=20.00,</br>
+                    EventCost=20.00m,  //note you have to add the m suffix when declaring a decimal.</br>
                     EventAddress="321 Mercer St",</br>
                     EventCity="Seattle",</br> 
                     EventState="Washington",</br>
@@ -33,7 +33,7 @@ new EventItem() { EventCategory=3,
 
 **Below is a blank item that you can use to create an EventItem**
 <pre>
-new EventItem() { EventCategory=  , EventVenue=  , EventStartDate= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventEndTime=  , EventPictureUrl=  , EventUrl= }
+new EventItem() { EventCategoryId=  , EventVenueId=  , EventStartDateId= , EventDescription=  , EventName=   , EventCost=   , EventAddress= , EventCity=  , EventState=  , EventZip=  , EventFavorite= , EventTicketsAvailable= , EventStartTime=  ,  EventEndDate= ,  EventEndTime=  , EventPictureUrl=  , EventUrl= }
 
 </pre>
 

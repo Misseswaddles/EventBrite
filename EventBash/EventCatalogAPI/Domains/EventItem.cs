@@ -16,7 +16,7 @@ namespace EventCatalogAPI.Domains
         public string EventAddress { get; set; }
         public string EventCity { get; set; }
         public string EventState { get; set; }
-        public int Eventzip { get; set; }
+        public int EventZip { get; set; }
         public bool EventFavorite { get; set; } // EventFavorite will be set to False by default
         public int EventTicketsAvailable { get; set; } // Total tickets available will be set to 100 by default
         
