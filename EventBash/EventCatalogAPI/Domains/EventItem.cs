@@ -35,7 +35,7 @@ namespace EventCatalogAPI.Domains
         //this is tied to EventVenue
         public int EventVenueId { get; set; } //foreign key
 
-        public string EventStartDateId { get; set; } // example 07/12/2019  Will be a foreign key
+        public int EventStartDateId { get; set; } // example 07/12/2019  Will be a foreign key
 
         public virtual EventStartDate EventStartDate { get; set; }
 
