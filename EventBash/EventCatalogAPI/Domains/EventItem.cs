@@ -12,7 +12,7 @@ namespace EventCatalogAPI.Domains
         public decimal EventCost { get; set; }
        // public string EventCategorytype { get; set; } //Music, Kids, Drama, Outdoor, Dance, Food, Wine, Seminars)
         public string EventDescription { get; set; }
-      //  public string EventVenuedesc { get; set; }
+
         public string EventAddress { get; set; }
         public string EventCity { get; set; }
         public string EventState { get; set; }
