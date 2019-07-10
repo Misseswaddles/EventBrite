@@ -10,6 +10,9 @@ namespace HelpAndContactUsAPI.Data
 {
     public class HelpContext : DbContext
     {
+        public HelpContext(DbContextOptions options) : base(options)
+        {
+        }
         public DbSet<Help> Helps { get; set; } //Helps(plural) denotes the table Help(singular) denotes a row in a table
         public DbSet<ContactUS> ContactUs { get; set; }
 

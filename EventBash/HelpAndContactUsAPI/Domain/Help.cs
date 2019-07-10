@@ -9,6 +9,6 @@ namespace HelpAndContactUsAPI.Domain
     {
         public int Id { get; set; } //Auto genrated........
         public string Query { get; set; }
-        public int Answer { get; set; }
+        public string Answer { get; set; }
     }
 }
