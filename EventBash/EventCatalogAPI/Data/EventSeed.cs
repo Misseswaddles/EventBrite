@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EventCatalogAPI.Domains;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventCatalogAPI.Data
 {
@@ -10,7 +11,7 @@ namespace EventCatalogAPI.Data
     {
         public static void Seed(EventContext context)
         {
-            //context.Database.Migrate(); //Not yet ready until Events API is completed.
+            context.Database.Migrate(); 
 
             //Only fill up the database if you don't have anything in there.
             if (!context.EventVenues.Any())

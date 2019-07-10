@@ -10,12 +10,12 @@ namespace EventCatalogAPI.Data
 {
     public class EventContext : DbContext 
     {
-        /* this will be added after we update the config file, and will make the clas injectable
+        //this will be added after we update the config file, and will make the clas injectable
         public EventContext(DbContextOptions options) : base(options)
         {
-
+            //this is empty but needs to be filled shortly.
         }
-        */
+       
 
         public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
 
