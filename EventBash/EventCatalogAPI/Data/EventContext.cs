@@ -47,7 +47,7 @@ namespace EventCatalogAPI.Data
         private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
-            builder.Property(c => c.EventId)
+            builder.Property(c => c.Id)
                 .IsRequired()
                 .ForSqlServerUseSequenceHiLo("events_hilo");
 

@@ -1,3 +1,17 @@
 C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.csproj.CoreCompileInputs.cache
 C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfoInputs.cache
 C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfo.cs
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.deps.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.runtimeconfig.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.runtimeconfig.dev.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.csprojAssemblyReference.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.csproj.CoreCompileInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorAssemblyInfo.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorAssemblyInfo.cs
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfoInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.AssemblyInfo.cs
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
