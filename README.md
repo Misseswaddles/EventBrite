@@ -71,9 +71,20 @@ EventVenue:
 
 
 ////////CategoryDescription/////</br>
+Notes: The categories were modified to reflect what is more closely aligned with EventBrite</br>
+
+
 CategoryId: (auto Primary Key) </br>
-CategoryName: "Music" (choices Music, Kids, Drama, Outdoor, Dance, Food, Wine, Seminars) </br>
+CategoryName: "Music" (choices Music, Food & Drink, Seminars, Film & Media, Kids, other) </br>
 CategoryDescription: "Live music" </br>
+
+
+new EventCategory() {Category = "Music"},
+new EventCategory() {Category = "Food & Drink"},
+new EventCategory() {Category = "Seminars" },
+new EventCategory() {Category = "Film & Media"},
+new EventCategory() {Category = "Kids" },
+new EventCategory() {Category = "Other"}
 
 ///User Favorites//   this table will store the user's favorite events</br>
 UserId: (from user information)
@@ -128,6 +139,12 @@ FeatureDescription:
 CreateEvent: true/false
 EnableEvent: true/false
 EnableUser: true/false
+
+
+
+
+
+
 
 
 //Admin permissions </br>
