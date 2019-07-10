@@ -10,12 +10,12 @@ namespace EventCatalogAPI.Data
 {
     public class EventContext : DbContext 
     {
-        /* this will be added after we update the config file, and will make the clas injectable
+        //this will be added after we update the config file, and will make the clas injectable
         public EventContext(DbContextOptions options) : base(options)
         {
-
+            //this is empty but needs to be filled shortly.
         }
-        */
+       
 
         public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
 
@@ -47,7 +47,7 @@ namespace EventCatalogAPI.Data
         private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
-            builder.Property(c => c.EventId)
+            builder.Property(c => c.Id)
                 .IsRequired()
                 .ForSqlServerUseSequenceHiLo("events_hilo");
 
@@ -66,6 +66,10 @@ namespace EventCatalogAPI.Data
             builder.HasOne(c => c.EventVenue) //red will go away when Items is successfully entered
                 .WithMany()
                 .HasForeignKey(c => c.EventVenueId);
+
+            builder.HasOne(c => c.EventStartDate)
+                .WithMany()
+                .HasForeignKey(c => c.EventStartDateId);
 
             
         }
