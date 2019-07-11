@@ -58,7 +58,8 @@ namespace EventCatalogAPI.Data
                   new EventItem() { EventCategoryId=2, EventVenueId=1, EventStartDateId=6, EventDescription="Live summer concert with Pink Martini and singer China Forbes"  , EventName="An Evening with Pink Martini with singer China Forbes"   , EventCost=79.00m   , EventAddress="14111 NE 145th Street" , EventCity="Woodinville"  , EventState="Washington"  , EventZip=98072  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="19:00"  ,  EventEndDate="9/6/19" ,  EventEndTime="21:00"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/6"  , EventUrl="https://www.ste-michelle.com/visit-us/events-calendar/an-evening-with-pink-martini-with-singer-china-forbes?concert=1" },
                   new EventItem() { EventCategoryId=1, EventVenueId=2, EventStartDateId=5, EventDescription="The Yacht Rock Revue is everything the late ‘70s and early ‘80s should’ve been!"  , EventName="Yacht Rock Revue"   , EventCost=25.00m   , EventAddress="925 East Pike Street" , EventCity="Seattle"  , EventState="Washington"  , EventZip=98122  , EventFavorite=false , EventTicketsAvailable=125 , EventStartTime="20:00"  ,  EventEndDate="8/4/19" ,  EventEndTime="23:55"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/7"  , EventUrl="http://www.neumos.com/event/1861114-yacht-rock-revue-seattle/" },
                   new EventItem() { EventCategoryId=5, EventVenueId=7, EventStartDateId=7, EventDescription="Saturday kids cooking classes at Urban Table will be filled with new ideas and creativity as we help your child create amazing things together through teamwork and imaginative thinking."  , EventName="Saturday Kids Cooking Classes"   , EventCost=75.00m   , EventAddress="11901 124th avenue NE" , EventCity="Kirkland"  , EventState="Washington"  , EventZip=98034  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="10:00"  ,  EventEndDate="8/10/19" ,  EventEndTime="12:00"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/8"  , EventUrl="https://www.urbantablewa.com/product-page/saturday-kids-cooking-classes" },
-                  new EventItem() { EventCategoryId=5, EventVenueId=8, EventStartDateId=8, EventDescription="Subaru Kids Obstacle Challenge is an adventure and obstacle course race series for kids ages 5-16, with 14-15 fun and challenging obstacles and mud! Our mission is to inspire and challenge kids, and forge family bonds, through obstacles and adventure.", EventName = "Subaru Kids Obstacle Challenge - Seattle - Saturday", EventCost = 44.00m, EventAddress = "2000 NW Sammamish Rd.", EventCity = "Issaquah", EventState = "Washington", EventZip = 98027, EventFavorite = false, EventTicketsAvailable = 125, EventStartTime = "20:00", EventEndDate = "8/17/19", EventEndTime = "12:20", EventPictureUrl = "http://externaleventcatalogbaseurltobereplaced/api/pic/9", EventUrl = "https://www.kidsobstaclechallenge.com/seattle" }
+                  new EventItem() { EventCategoryId=5, EventVenueId=8, EventStartDateId=8, EventDescription="Subaru Kids Obstacle Challenge is an adventure and obstacle course race series for kids ages 5-16, with 14-15 fun and challenging obstacles and mud! Our mission is to inspire and challenge kids, and forge family bonds, through obstacles and adventure.", EventName = "Subaru Kids Obstacle Challenge - Seattle - Saturday", EventCost = 44.00m, EventAddress = "2000 NW Sammamish Rd.", EventCity = "Issaquah", EventState = "Washington", EventZip = 98027, EventFavorite = false, EventTicketsAvailable = 125, EventStartTime = "20:00", EventEndDate = "8/17/19", EventEndTime = "12:20", EventPictureUrl = "http://externaleventcatalogbaseurltobereplaced/api/pic/9", EventUrl = "https://www.kidsobstaclechallenge.com/seattle" },
+                  new EventItem() {EventCategoryId=2, EventVenueId=9, EventStartDateId=9, EventDescription="Featuring incredible special events, informative culinary and beverage demonstrations, celebrity chefs, and delicious World Showcase Marketplace Food Booths, this annual event is a can’t miss part of the Disney calendar!"  , EventName="Epcot® International Food & Wine Festival"   , EventCost=75.00m   , EventAddress="11223 112th avenue NE" , EventCity="Seattle"  , EventState="Washington"  , EventZip=98034  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="10:00"  ,  EventEndDate="11/23/19" ,  EventEndTime="12:00"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/10", EventUrl="https://waltexpress.com/wp-content/uploads/2019/04/2019-FOOD-WINE-FESTIVAL-DATES-RELEASED.png"  }
     };
         }
 
@@ -74,7 +75,8 @@ namespace EventCatalogAPI.Data
                 new EventVenue() {Venue= "Bottle House Seattle"},
                 new EventVenue() {Venue= "McCaw Hall"},
                 new EventVenue() {Venue= "Urban table culinary arts"},
-                new EventVenue() {Venue= "Lake Sammamish State Park"}
+                new EventVenue() {Venue= "Lake Sammamish State Park"},
+                new EventVenue() {Venue= "Epot World Showcase"}
             };
         }
 
@@ -90,7 +92,8 @@ namespace EventCatalogAPI.Data
                 new EventStartDate() {StartDate = "8/4/19"},
                 new EventStartDate() {StartDate = "9/6/19"},
                 new EventStartDate() {StartDate = "7/27/19"},
-                new EventStartDate() {StartDate = "8/7/19"}
+                new EventStartDate() {StartDate = "8/7/19"},
+                new EventStartDate() {StartDate = "8/29/19"}
             };
         }
 

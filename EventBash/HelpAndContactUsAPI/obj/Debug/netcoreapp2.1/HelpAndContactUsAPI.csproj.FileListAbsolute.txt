@@ -29,3 +29,13 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debu
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorTargetAssemblyInfo.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.deps.json
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.runtimeconfig.json
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.runtimeconfig.dev.json
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\bin\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorAssemblyInfo.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorAssemblyInfo.cs
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorTargetAssemblyInfo.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
