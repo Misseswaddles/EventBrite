@@ -8,7 +8,7 @@ namespace HelpAndContactUsAPI.Domain
     public class ContactUS
     {
         public int Id { get; set; }
-        public int PhoneNumber { get; set; }
+        public double PhoneNumber { get; set; }
         public string EmailId { get; set; }
 
     }
