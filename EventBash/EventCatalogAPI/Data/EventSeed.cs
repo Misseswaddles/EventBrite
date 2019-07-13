@@ -73,6 +73,10 @@ namespace EventCatalogAPI.Data
                   new EventItem() { EventCategoryId=6, EventVenueId=7,  EventStartDateId=7,  EventDescription="Enjoy thousands of water lanterns gently floating on the water at this one night only event" , EventName="1000 Lights Water Lantern Festival 2019" , EventCost=25.00m , EventAddress="9703 Northeast Juanita Drive " , EventCity="Kirkland" , EventState="Washington" , EventZip= 98034 , EventFavorite=false , EventTicketsAvailable=1000 , EventStartTime="18:00" , EventEndDate="8/10/19" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/18" , EventUrl="https://www.1000lights.com/" },
                   new EventItem() { EventCategoryId=6, EventVenueId=8,  EventStartDateId=7,  EventDescription="Join us as we set sail from Downtown Kirkland on Argosy Cruise Lines" , EventName="YOGACRUISE 2019 benefiting Seattle Children's" , EventCost=100.00m , EventAddress="25 Lakeshore Plaza" , EventCity="Kirkland" , EventState="Washington" , EventZip=98033 , EventFavorite=false , EventTicketsAvailable=250 , EventStartTime= "18:30" , EventEndDate="8/10/19" , EventEndTime="22:00" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/19" , EventUrl="https://www.seattlechildrens.org/" },
                   new EventItem() { EventCategoryId=6, EventVenueId=9,  EventStartDateId=16,  EventDescription="Come kickoff the Making Strides Against Breast Cancer of Seattle season with a night of networking" , EventName="Wild for a Cure" , EventCost=0.00m , EventAddress="5500 Phinney Avenue North" , EventCity="Seattle" , EventState="Washington" , EventZip=98103 , EventFavorite=false , EventTicketsAvailable=400 , EventStartTime="19:00" , EventEndDate="8/8/19" , EventEndTime="22:00" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/20" , EventUrl="http://www.makingstrideswalk.org/seattlewa"},
+                  new EventItem() { EventCategoryId=4, EventVenueId=19, EventStartDateId=18, EventDescription="KUOW is bringing Week in Review to Edmonds and we want to see you there!" , EventName="Week in Review Live: Edmonds" , EventCost=0.00m , EventAddress="410 4th Avenue North" , EventCity="Edmonds" , EventState="Washington" , EventZip=98020 , EventFavorite=false , EventTicketsAvailable=300 , EventStartTime="19:00" , EventEndDate="9/19/19" , EventEndTime="21:00" ,  EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/21" , EventUrl="https://kuow.org/radioactive"},
+                  new EventItem() { EventCategoryId=5, EventVenueId=20, EventStartDateId=17, EventDescription="Adventure and obstacle course race series for kids." , EventName="Subaru Kids Obstacle Challenge - Seattle - Saturday" , EventCost=45.00m , EventAddress="2000 NW Sammamish Rd" , EventCity="Sammamish" , EventState="Washington" , EventZip=98027 , EventFavorite=false , EventTicketsAvailable=500 , EventStartTime="8:30" , EventEndDate="8/17/19" , EventEndTime="12:30" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/22" , EventUrl="https://www.kidsobstaclechallenge.com/seattle" },
+
+
            };
         }
 
@@ -98,7 +102,9 @@ namespace EventCatalogAPI.Data
                 new EventVenue() {Venue= "National Nordic Museum"},   /// 15
                 new EventVenue() {Venue= "Princi Bakery"},   /// 16
                 new EventVenue() {Venue= "Nectar Lounge"},   /// 17
-                new EventVenue() {Venue= "Creative Learning Center"} ///18
+                new EventVenue() {Venue= "Creative Learning Center"},    ///18
+                new EventVenue() {Venue= "Edmonds Center for the Arts"},  ///19
+                new EventVenue() {Venue= "Lake Sammamish State Park"},    ///20
             
 
 
@@ -126,6 +132,8 @@ namespace EventCatalogAPI.Data
                 new EventStartDate() {StartDate = "9/13/19"},    /// 14
                 new EventStartDate() {StartDate = "8/2/19"},     /// 15
                 new EventStartDate() {StartDate = "8/8/19"},     /// 16
+                new EventStartDate() {StartDate = "8/17/19"},    /// 17
+                new EventStartDate() {StartDate = "9/19/19"},    /// 18
 
 
             };

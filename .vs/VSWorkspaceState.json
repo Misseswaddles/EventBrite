@@ -4,8 +4,8 @@
     "\\EventBash",
     "\\EventBash\\EventCatalogAPI",
     "\\EventBash\\EventCatalogAPI\\Controllers",
-    "\\EventBash\\UserAPI\\Controllers"
+    "\\EventBash\\EventCatalogAPI\\Data"
   ],
-  "SelectedNode": "\\EventBash\\EventCatalogAPI\\Controllers",
+  "SelectedNode": "\\EventBash\\EventCatalogAPI\\Data\\EventSeed.cs",
   "PreviewInSolutionExplorer": false
 }
