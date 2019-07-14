@@ -27,10 +27,6 @@ namespace EventCatalogAPI.Controllers
             var buffer = System.IO.File.ReadAllBytes(path);
             return File(buffer,"image/png");
              
-
-
-
-
         }
 
 
