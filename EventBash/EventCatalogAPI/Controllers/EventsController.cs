@@ -59,7 +59,7 @@ namespace EventCatalogAPI.Controllers
             items.ForEach(
                 e =>
                 e.EventPictureUrl =
-                 e.EventPictureUrl.Replace("http://externalcatalogbaseurltobereplaced",
+                 e.EventPictureUrl.Replace("http://externaleventcatalogbaseurltobereplaced",
                  _config["ExternalCatalogBaseUrl"]));
 
             return items;
@@ -121,9 +121,8 @@ namespace EventCatalogAPI.Controllers
 
             }
 
-            item.EventPictureUrl = item.EventPictureUrl
-                                    .Replace("http://externalcatalogbaseurltobereplaced",
-                                    _config["ExternalCatalogBaseUrl"]);
+            item.EventPictureUrl = item.EventPictureUrl 
+                                       .Replace("http://externaleventcatalogbaseurltobereplaced", _config["ExternalCatalogBaseUrl"]);
 
             return Ok(item);
                         
