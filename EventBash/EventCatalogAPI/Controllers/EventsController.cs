@@ -31,7 +31,7 @@ namespace EventCatalogAPI.Controllers
         [HttpGet]
         [Route("[action]")]
         public async Task<IActionResult> Items(
-            [FromQuery]int pageSize = 5,
+            [FromQuery]int pageSize = 10,
             [FromQuery]int pageIndex = 0)
         {
             var itemsCount = await _context.EventItems.LongCountAsync();
@@ -127,6 +127,7 @@ namespace EventCatalogAPI.Controllers
             return Ok(item);
                         
         }
+
 
 
 

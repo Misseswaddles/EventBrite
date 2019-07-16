@@ -53,7 +53,7 @@ namespace EventCatalogAPI.Data
 
                     new EventItem() { EventCategoryId=3, EventVenueId=6, EventStartDateId=1, EventDescription="Dummy Data DELETE"  , EventName="DummyDATA"   , EventCost=20.00m   , EventAddress="DUMMY DAta" , EventCity="Seattle"  , EventState="Washington"  , EventZip=98109  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="8:00"  ,  EventEndDate="11/23/19", EventEndTime="17:00", EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/1"  , EventUrl="https://tedxseattle.com/" },
                
-               /*   Below is data already added to database
+              
                  new EventItem() { EventCategoryId=3, EventVenueId=6, EventStartDateId=1, EventDescription="Talk Talk Talks on a moment of change from one position to another, whether it be in relationships, beliefs, cultures, perspectives or the world"  , EventName="TEDxSeattle 2019: SHIFT"   , EventCost=20.00m   , EventAddress="321 Mercer St" , EventCity="Seattle"  , EventState="Washington"  , EventZip=98109  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="8:00"  ,  EventEndDate="11/23/19", EventEndTime="17:00", EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/1"  , EventUrl="https://tedxseattle.com/" },
                   new EventItem() { EventCategoryId=2, EventVenueId=5, EventStartDateId=2, EventDescription="Food and wine celebration of Bastille Day"  , EventName="Bastille Day Patio Party"   , EventCost=19.00m   , EventAddress="1416 34Th Ave" , EventCity="Seattle"  , EventState="Washington"  , EventZip=98122  , EventFavorite=false , EventTicketsAvailable=100 , EventStartTime="15:00"  ,  EventEndDate="7/14/19" ,  EventEndTime="18:00"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/2"   , EventUrl="http://www.bottlehouseseattle.com/happenings/" },
                   new EventItem() { EventCategoryId=2, EventVenueId=4, EventStartDateId=1, EventDescription="Specialty food show connecting local food craftsman with everyday customers."  , EventName="Gobble Up Seattle"   , EventCost=0.00m   , EventAddress="6310 NE 74th St " , EventCity="Seattle"  , EventState="Washington"  , EventZip=98115 , EventFavorite=false, EventTicketsAvailable=200 , EventStartTime="10:00"  ,  EventEndDate="11/23/19",  EventEndTime="17:00"  , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/3" , EventUrl="https://gobbleupnorthwest.com/" },
@@ -78,7 +78,7 @@ namespace EventCatalogAPI.Data
                   new EventItem() { EventCategoryId=6, EventVenueId=9,  EventStartDateId=16,  EventDescription="Come kickoff the Making Strides Against Breast Cancer of Seattle season with a night of networking" , EventName="Wild for a Cure" , EventCost=0.00m , EventAddress="5500 Phinney Avenue North" , EventCity="Seattle" , EventState="Washington" , EventZip=98103 , EventFavorite=false , EventTicketsAvailable=400 , EventStartTime="19:00" , EventEndDate="8/8/19" , EventEndTime="22:00" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/20" , EventUrl="http://www.makingstrideswalk.org/seattlewa"},
                   new EventItem() { EventCategoryId=4, EventVenueId=19, EventStartDateId=18, EventDescription="KUOW is bringing Week in Review to Edmonds and we want to see you there!" , EventName="Week in Review Live: Edmonds" , EventCost=0.00m , EventAddress="410 4th Avenue North" , EventCity="Edmonds" , EventState="Washington" , EventZip=98020 , EventFavorite=false , EventTicketsAvailable=300 , EventStartTime="19:00" , EventEndDate="9/19/19" , EventEndTime="21:00" ,  EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/21" , EventUrl="https://kuow.org/radioactive"},
                   new EventItem() { EventCategoryId=5, EventVenueId=20, EventStartDateId=17, EventDescription="Adventure and obstacle course race series for kids." , EventName="Subaru Kids Obstacle Challenge - Seattle - Saturday" , EventCost=45.00m , EventAddress="2000 NW Sammamish Rd" , EventCity="Sammamish" , EventState="Washington" , EventZip=98027 , EventFavorite=false , EventTicketsAvailable=500 , EventStartTime="8:30" , EventEndDate="8/17/19" , EventEndTime="12:30" , EventPictureUrl="http://externaleventcatalogbaseurltobereplaced/api/pic/22" , EventUrl="https://www.kidsobstaclechallenge.com/seattle" },
-                 */
+
 
            };
         }
@@ -88,12 +88,12 @@ namespace EventCatalogAPI.Data
             return new List<EventVenue>()
             {
                 //Here, add the list of venues I created to populate db.
-              /*  new EventVenue() {Venue= "Chateau Ste Michelle"},    /// 1
+                new EventVenue() {Venue= "Chateau Ste Michelle"},    /// 1
                 new EventVenue() {Venue= "Neumos"},  /// 2
                 new EventVenue() {Venue= "Lauren Ashton Cellars"},   /// 3
                 new EventVenue() {Venue= "Magnussen Park Hangar 30"},    /// 4
                 new EventVenue() {Venue= "Bottle House Seattle"},    /// 5
-                new EventVenue() {Venue= "McCaw Hall"},  */   /// 6
+                new EventVenue() {Venue= "McCaw Hall"},     /// 6
                 new EventVenue() {Venue= "Juanita Beach Park"},    /// 7
                 new EventVenue() {Venue= "Kirkland City Dock"},    /// 8
                 new EventVenue() {Venue= "Woodland Park Zoo"},    /// 9

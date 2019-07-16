@@ -24,3 +24,4 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\n
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorTargetAssemblyInfo.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csprojAssemblyReference.cache
