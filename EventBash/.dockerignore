@@ -1,9 +1,9 @@
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
-**/.vs
-**/.vscode
+.dockerignore
+.env
+.git
+.gitignore
+.vs
+.vscode
 **/*.*proj.user
 **/azds.yaml
 **/charts
@@ -11,8 +11,6 @@
 **/obj
 **/Dockerfile
 **/Dockerfile.develop
-**/docker-compose.yml
-**/docker-compose.*.yml
 **/*.dbmdl
 **/*.jfm
 **/secrets.dev.yaml
