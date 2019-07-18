@@ -24,3 +24,17 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\n
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorTargetAssemblyInfo.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.pdb
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.deps.json
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.runtimeconfig.json
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.runtimeconfig.dev.json
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.dll
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.pdb
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csprojAssemblyReference.cache
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csproj.CoreCompileInputs.cache
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorAssemblyInfo.cache
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorAssemblyInfo.cs
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.AssemblyInfoInputs.cache
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.AssemblyInfo.cs
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorTargetAssemblyInfo.cache
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.dll
+C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.pdb

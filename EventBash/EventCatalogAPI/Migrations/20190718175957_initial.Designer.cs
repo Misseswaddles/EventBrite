@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventCatalogAPI.Migrations
 {
     [DbContext(typeof(EventContext))]
-    [Migration("20190714175414_Secondary")]
-    partial class Secondary
+    [Migration("20190718175957_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,6 @@ namespace EventCatalogAPI.Migrations
                 .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("Relational:Sequence:.event_category_hilo", "'event_category_hilo', '', '1', '10', '', '', 'Int64', 'False'")
-                .HasAnnotation("Relational:Sequence:.event_start_date_hilo", "'event_start_date_hilo', '', '1', '10', '', '', 'Int64', 'False'")
                 .HasAnnotation("Relational:Sequence:.event_venue_hilo", "'event_venue_hilo', '', '1', '10', '', '', 'Int64', 'False'")
                 .HasAnnotation("Relational:Sequence:.events_hilo", "'events_hilo', '', '1', '10', '', '', 'Int64', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -69,8 +68,6 @@ namespace EventCatalogAPI.Migrations
 
                     b.Property<string>("EventPictureUrl");
 
-                    b.Property<int>("EventStartDateId");
-
                     b.Property<string>("EventStartTime");
 
                     b.Property<string>("EventState");
@@ -87,27 +84,9 @@ namespace EventCatalogAPI.Migrations
 
                     b.HasIndex("EventCategoryId");
 
-                    b.HasIndex("EventStartDateId");
-
                     b.HasIndex("EventVenueId");
 
                     b.ToTable("Events");
-                });
-
-            modelBuilder.Entity("EventCatalogAPI.Domains.EventStartDate", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:HiLoSequenceName", "event_start_date_hilo")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.SequenceHiLo);
-
-                    b.Property<string>("StartDate")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("EventStartDates");
                 });
 
             modelBuilder.Entity("EventCatalogAPI.Domains.EventVenue", b =>
@@ -131,11 +110,6 @@ namespace EventCatalogAPI.Migrations
                     b.HasOne("EventCatalogAPI.Domains.EventCategory", "EventCategory")
                         .WithMany()
                         .HasForeignKey("EventCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("EventCatalogAPI.Domains.EventStartDate", "EventStartDate")
-                        .WithMany()
-                        .HasForeignKey("EventStartDateId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EventCatalogAPI.Domains.EventVenue", "EventVenue")

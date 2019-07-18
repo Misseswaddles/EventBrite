@@ -2,16 +2,12 @@
 
 namespace EventCatalogAPI.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateSequence(
                 name: "event_category_hilo",
-                incrementBy: 10);
-
-            migrationBuilder.CreateSequence(
-                name: "event_start_date_hilo",
                 incrementBy: 10);
 
             migrationBuilder.CreateSequence(
@@ -32,18 +28,6 @@ namespace EventCatalogAPI.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_EventCategories", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "EventStartDates",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false),
-                    StartDate = table.Column<string>(maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EventStartDates", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,8 +62,7 @@ namespace EventCatalogAPI.Migrations
                     EventPictureUrl = table.Column<string>(nullable: true),
                     EventUrl = table.Column<string>(nullable: true),
                     EventCategoryId = table.Column<int>(nullable: false),
-                    EventVenueId = table.Column<int>(nullable: false),
-                    EventStartDateId = table.Column<int>(nullable: false)
+                    EventVenueId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -88,12 +71,6 @@ namespace EventCatalogAPI.Migrations
                         name: "FK_Events_EventCategories_EventCategoryId",
                         column: x => x.EventCategoryId,
                         principalTable: "EventCategories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Events_EventStartDates_EventStartDateId",
-                        column: x => x.EventStartDateId,
-                        principalTable: "EventStartDates",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -110,11 +87,6 @@ namespace EventCatalogAPI.Migrations
                 column: "EventCategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Events_EventStartDateId",
-                table: "Events",
-                column: "EventStartDateId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Events_EventVenueId",
                 table: "Events",
                 column: "EventVenueId");
@@ -129,16 +101,10 @@ namespace EventCatalogAPI.Migrations
                 name: "EventCategories");
 
             migrationBuilder.DropTable(
-                name: "EventStartDates");
-
-            migrationBuilder.DropTable(
                 name: "EventVenues");
 
             migrationBuilder.DropSequence(
                 name: "event_category_hilo");
-
-            migrationBuilder.DropSequence(
-                name: "event_start_date_hilo");
 
             migrationBuilder.DropSequence(
                 name: "event_venue_hilo");
