@@ -10,16 +10,18 @@ namespace EventCatalogAPI.Data
 {
     public class EventContext : DbContext 
     {
-        /* this will be added after we update the config file, and will make the clas injectable
+        //this will be added after we update the config file, and will make the clas injectable
         public EventContext(DbContextOptions options) : base(options)
         {
-
+            //this is empty but needs to be filled shortly.
         }
-        */
+       
 
         public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
 
         public DbSet<EventVenue> EventVenues { get; set; } // EventVenues is the table
+
+        public DbSet<EventStartDate> EventStartDates { get; set; }
 
 
         //below it would be a best practice to change EventItems to EventItem
@@ -37,12 +39,15 @@ namespace EventCatalogAPI.Data
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
             modelBuilder.Entity<EventItem>(ConfigureEventItem); //Selvi -> updated ConfigureEventItems to ConfigureEventItem to make it more sensible 
+            modelBuilder.Entity<EventStartDate>(ConfigurEventStartDates);
         }
+
+
 
         private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
             builder.ToTable("Events");//the actual name of the event catalog
-            builder.Property(c => c.EventId)
+            builder.Property(c => c.Id)
                 .IsRequired()
                 .ForSqlServerUseSequenceHiLo("events_hilo");
 
@@ -62,7 +67,24 @@ namespace EventCatalogAPI.Data
                 .WithMany()
                 .HasForeignKey(c => c.EventVenueId);
 
+            builder.HasOne(c => c.EventStartDate)
+                .WithMany()
+                .HasForeignKey(c => c.EventStartDateId);
+
             
+        }
+
+        private void ConfigurEventStartDates(EntityTypeBuilder<EventStartDate> builder)
+        {
+            builder.ToTable("EventStartDates");
+
+            builder.Property(c => c.Id)
+                .IsRequired()
+                .ForSqlServerUseSequenceHiLo("event_start_date_hilo");
+
+            builder.Property(c => c.StartDate)
+                .IsRequired()
+                .HasMaxLength(50);
         }
 
         private void ConfigureEventCategory(EntityTypeBuilder<EventCategory> builder)

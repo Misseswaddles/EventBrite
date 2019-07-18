@@ -3,10 +3,9 @@
     "",
     "\\EventBash",
     "\\EventBash\\EventCatalogAPI",
-    "\\EventBash\\EventCatalogAPI\\Data",
-    "\\EventBash\\EventCatalogAPI\\Domains",
-    "\\EventBash\\UserAPI"
+    "\\EventBash\\EventCatalogAPI\\Controllers",
+    "\\EventBash\\EventCatalogAPI\\Data"
   ],
-  "SelectedNode": "\\EventBash\\EventCatalogAPI\\Data\\EventContext.cs",
+  "SelectedNode": "\\EventBash\\EventCatalogAPI\\Data\\EventSeed.cs",
   "PreviewInSolutionExplorer": false
 }
