@@ -94,15 +94,6 @@ namespace EventCatalogAPI.Controllers
             return Ok(items);
         }
 
-       /* //returns a list of startdates
-        [HttpGet]
-        [Route("[action]")]
-        public async Task<IActionResult> EventStartDate()
-        {
-            var items = await _context.EventStartDates.ToListAsync();
-            return Ok(items);
-        }*/
-
         //returns item details by id
         [HttpGet]
         [Route("items/{id:int}")]

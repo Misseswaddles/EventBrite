@@ -10,35 +10,35 @@ namespace EventCatalogAPI.Data
 {
     public class EventContext : DbContext 
     {
-        //this will be added after we update the config file, and will make the clas injectable
+        //add dependency injection and config file using class constructor
+
         public EventContext(DbContextOptions options) : base(options)
         {
             //this is empty but needs to be filled shortly.
         }
        
 
-        public DbSet<EventCategory> EventCategories { get; set; } // EventCategories is the table
+        public DbSet<EventCategory> EventCategories { get; set; } //DB Table EventCategories
 
-        public DbSet<EventVenue> EventVenues { get; set; } // EventVenues is the table
-
-        //below it would be a best practice to change EventItems to EventItem
-        //Selvi - Updated the folder name under Domains to EventItem and the below table name to EventItems as mentioned in class as a good practice
-        public DbSet<EventItem> EventItems { get; set; } //note, this should be edited ---> Update done by Selvi
+        public DbSet<EventVenue> EventVenues { get; set; } // DB table EventVenues
+        
+        public DbSet<EventItem> EventItems { get; set; } //DB Table EventItems
 
 
-
-        //Ceate the primary keys for Entity Framework
+        //defining relationship of tables using Entity Framework
         protected override void OnModelCreating(ModelBuilder modelBuilder )
 
-        //The EventSeed file will create a method to get 
-        //ex. ConfigureEventVenue, etc.
         {
             modelBuilder.Entity<EventVenue>(ConfigureEventVenue);
             modelBuilder.Entity<EventCategory>(ConfigureEventCategory);
             modelBuilder.Entity<EventItem>(ConfigureEventItem); //Selvi -> updated ConfigureEventItems to ConfigureEventItem to make it more sensible 
         }
 
-
+        /**
+         * creating table  tableName :Events with a 
+         * primary key : Id,
+         * ForeginKey : EventVenue,EventCategory 
+         */
 
         private void ConfigureEventItem(EntityTypeBuilder<EventItem> builder)
         {
@@ -51,7 +51,7 @@ namespace EventCatalogAPI.Data
                 .IsRequired()
                 .HasMaxLength(100);
 
-            builder.Property(c => c.EventCost) // Selvi -> have declared a property as EventCost. Check it out
+            builder.Property(c => c.EventCost) 
                 .IsRequired();
 
             //Here, are the relationships between Events and the venue and category
