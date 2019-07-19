@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190716153351_sriSecond.cs" />
+    <Compile Remove="Migrations\20190716153351_sriSecond.Designer.cs" />
+    <Compile Remove="Migrations\20190716173300_srisecond.cs" />
+    <Compile Remove="Migrations\20190716173300_srisecond.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

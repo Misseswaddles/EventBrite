@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EventCatalogAPI.Migrations
+namespace UserAPI.Migrations
 {
-    public partial class Fourth : Migration
+    public partial class sritest : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -31,7 +31,7 @@ namespace EventCatalogAPI.Controllers
         [HttpGet]
         [Route("[action]")]
         public async Task<IActionResult> Items(
-            [FromQuery]int pageSize = 10,
+            [FromQuery]int pageSize = 5,
             [FromQuery]int pageIndex = 0)
         {
             var itemsCount = await _context.EventItems.LongCountAsync();
@@ -94,15 +94,6 @@ namespace EventCatalogAPI.Controllers
             return Ok(items);
         }
 
-        //returns a list of startdates
-        [HttpGet]
-        [Route("[action]")]
-        public async Task<IActionResult> EventStartDate()
-        {
-            var items = await _context.EventStartDates.ToListAsync();
-            return Ok(items);
-        }
-
         //returns item details by id
         [HttpGet]
         [Route("items/{id:int}")]
@@ -127,7 +118,6 @@ namespace EventCatalogAPI.Controllers
             return Ok(item);
                         
         }
-
 
 
 

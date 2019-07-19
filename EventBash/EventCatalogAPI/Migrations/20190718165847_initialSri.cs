@@ -1,17 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventCatalogAPI.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initialSri : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateSequence(
                 name: "event_category_hilo",
-                incrementBy: 10);
-
-            migrationBuilder.CreateSequence(
-                name: "event_start_date_hilo",
                 incrementBy: 10);
 
             migrationBuilder.CreateSequence(
@@ -35,15 +32,16 @@ namespace EventCatalogAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventStartDates",
+                name: "EventStartDate",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false),
-                    StartDate = table.Column<string>(maxLength: 50, nullable: false)
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    StartDate = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EventStartDates", x => x.Id);
+                    table.PrimaryKey("PK_EventStartDate", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -91,9 +89,9 @@ namespace EventCatalogAPI.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Events_EventStartDates_EventStartDateId",
+                        name: "FK_Events_EventStartDate_EventStartDateId",
                         column: x => x.EventStartDateId,
-                        principalTable: "EventStartDates",
+                        principalTable: "EventStartDate",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -129,16 +127,13 @@ namespace EventCatalogAPI.Migrations
                 name: "EventCategories");
 
             migrationBuilder.DropTable(
-                name: "EventStartDates");
+                name: "EventStartDate");
 
             migrationBuilder.DropTable(
                 name: "EventVenues");
 
             migrationBuilder.DropSequence(
                 name: "event_category_hilo");
-
-            migrationBuilder.DropSequence(
-                name: "event_start_date_hilo");
 
             migrationBuilder.DropSequence(
                 name: "event_venue_hilo");

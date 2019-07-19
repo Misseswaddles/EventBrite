@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventCatalogAPI", "EventCat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserAPI", "UserAPI\UserAPI.csproj", "{9B6D3807-6C88-4BC0-820A-958C23A7D00E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpAndContactUsAPI", "HelpAndContactUsAPI\HelpAndContactUsAPI.csproj", "{0073992F-8964-409B-9BDC-F2C328F69995}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpAndContactUsAPI", "HelpAndContactUsAPI\HelpAndContactUsAPI.csproj", "{0073992F-8964-409B-9BDC-F2C328F69995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
