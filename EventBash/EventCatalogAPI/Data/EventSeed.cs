@@ -28,20 +28,20 @@ namespace EventCatalogAPI.Data
                 context.SaveChanges();
             }
 
-            if (!context.EventStartDates.Any())
-            {
+          if (!context.EventStartDates.Any())
+         {
                 context.EventStartDates.AddRange(GetPreconfiguredEventStartDates()) ;
 
                 context.SaveChanges();
-            }
+           }
 
 
-           if (!context.EventItems.Any())
-            {
-                context.EventItems.AddRange(GetPreconfiguredEventItems());
+       if (!context.EventItems.Any())
+           {
+             context.EventItems.AddRange(GetPreconfiguredEventItems());
 
-                context.SaveChanges();
-            }
+               context.SaveChanges();
+         }
 
 
         }
