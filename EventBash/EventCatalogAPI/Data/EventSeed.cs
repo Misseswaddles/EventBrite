@@ -37,7 +37,7 @@ namespace EventCatalogAPI.Data
 
        if (!context.EventItems.Any())
            {
-             context.EventItems.AddRange(GetPreconfiguredEventItems())
+                context.EventItems.AddRange(GetPreconfiguredEventItems());
 
              context.SaveChanges();
          }
