@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventCatalogAPI.Migrations
 {
     [DbContext(typeof(EventContext))]
-    [Migration("20190718175957_initial")]
+    [Migration("20190720025812_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,8 @@ namespace EventCatalogAPI.Migrations
                         .HasMaxLength(100);
 
                     b.Property<string>("EventPictureUrl");
+
+                    b.Property<string>("EventStartDate");
 
                     b.Property<string>("EventStartTime");
 
