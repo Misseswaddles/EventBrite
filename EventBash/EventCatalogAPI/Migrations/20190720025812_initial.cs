@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventCatalogAPI.Migrations
 {
-    public partial class initialSri : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,19 +31,6 @@ namespace EventCatalogAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventStartDate",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    StartDate = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EventStartDate", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "EventVenues",
                 columns: table => new
                 {
@@ -70,14 +56,14 @@ namespace EventCatalogAPI.Migrations
                     EventZip = table.Column<int>(nullable: false),
                     EventFavorite = table.Column<bool>(nullable: false),
                     EventTicketsAvailable = table.Column<int>(nullable: false),
+                    EventStartDate = table.Column<string>(nullable: true),
                     EventStartTime = table.Column<string>(nullable: true),
                     EventEndDate = table.Column<string>(nullable: true),
                     EventEndTime = table.Column<string>(nullable: true),
                     EventPictureUrl = table.Column<string>(nullable: true),
                     EventUrl = table.Column<string>(nullable: true),
                     EventCategoryId = table.Column<int>(nullable: false),
-                    EventVenueId = table.Column<int>(nullable: false),
-                    EventStartDateId = table.Column<int>(nullable: false)
+                    EventVenueId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -86,12 +72,6 @@ namespace EventCatalogAPI.Migrations
                         name: "FK_Events_EventCategories_EventCategoryId",
                         column: x => x.EventCategoryId,
                         principalTable: "EventCategories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Events_EventStartDate_EventStartDateId",
-                        column: x => x.EventStartDateId,
-                        principalTable: "EventStartDate",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -108,11 +88,6 @@ namespace EventCatalogAPI.Migrations
                 column: "EventCategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Events_EventStartDateId",
-                table: "Events",
-                column: "EventStartDateId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Events_EventVenueId",
                 table: "Events",
                 column: "EventVenueId");
@@ -125,9 +100,6 @@ namespace EventCatalogAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "EventCategories");
-
-            migrationBuilder.DropTable(
-                name: "EventStartDate");
 
             migrationBuilder.DropTable(
                 name: "EventVenues");

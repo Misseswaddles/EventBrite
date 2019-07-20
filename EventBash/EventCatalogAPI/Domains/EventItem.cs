@@ -19,12 +19,14 @@ namespace EventCatalogAPI.Domains
         public int EventZip { get; set; }
         public bool EventFavorite { get; set; } // EventFavorite will be set to False by default
         public int EventTicketsAvailable { get; set; } // Total tickets available will be set to 100 by default
-        
+
+        public string EventStartDate { get; set; }
         public string EventStartTime { get; set; }
+        
 
         public string EventEndDate { get; set; } // example 07/12/2019
-
         public string EventEndTime { get; set; }
+
         public string EventPictureUrl { get; set; } //picture for the Event to be created
         public string EventUrl { get; set; } // website of the hosting party
 
@@ -34,9 +36,6 @@ namespace EventCatalogAPI.Domains
 
         //this is tied to EventVenue
         public int EventVenueId { get; set; } //foreign key
-
-       
-        //public virtual EventStartDate EventStartDate { get; set; }
 
         public virtual EventCategory EventCategory { get; set; } // EventCategoryID will become foreign key and this statement links it
 

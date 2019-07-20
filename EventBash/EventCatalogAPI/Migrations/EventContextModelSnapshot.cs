@@ -66,7 +66,7 @@ namespace EventCatalogAPI.Migrations
 
                     b.Property<string>("EventPictureUrl");
 
-                    b.Property<int>("EventStartDateId");
+                    b.Property<string>("EventStartDate");
 
                     b.Property<string>("EventStartTime");
 
@@ -84,24 +84,9 @@ namespace EventCatalogAPI.Migrations
 
                     b.HasIndex("EventCategoryId");
 
-                    b.HasIndex("EventStartDateId");
-
                     b.HasIndex("EventVenueId");
 
                     b.ToTable("Events");
-                });
-
-            modelBuilder.Entity("EventCatalogAPI.Domains.EventStartDate", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("StartDate");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("EventStartDate");
                 });
 
             modelBuilder.Entity("EventCatalogAPI.Domains.EventVenue", b =>
@@ -125,11 +110,6 @@ namespace EventCatalogAPI.Migrations
                     b.HasOne("EventCatalogAPI.Domains.EventCategory", "EventCategory")
                         .WithMany()
                         .HasForeignKey("EventCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("EventCatalogAPI.Domains.EventStartDate", "EventStartDate")
-                        .WithMany()
-                        .HasForeignKey("EventStartDateId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EventCatalogAPI.Domains.EventVenue", "EventVenue")
