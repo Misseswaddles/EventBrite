@@ -1,0 +1,3 @@
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CoreCompileInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfoInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfo.cs
