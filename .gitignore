@@ -10,3 +10,6 @@
 /EventBash/HelpAndContactUs/bin/Debug/netcoreapp2.1
 /EventBash/UserAPI/obj
 /EventBash/UserAPI/bin/Debug/netcoreapp2.1
+EventBash/.vs/EventBash/v16/Server/sqlite3/storage.ide-wal
+EventBash/.vs/EventBash/v16/Server/sqlite3/storage.ide-shm
+EventBash/.vs/EventBash/v16/Server/sqlite3/storage.ide
