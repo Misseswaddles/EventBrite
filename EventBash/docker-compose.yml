@@ -15,7 +15,7 @@ services:
             DatabaseName: EventDB
             DatabaseUser: sa
             DatabaseUserPassword: EventApi(!)
-            ExternalCatalogBaseUrl: http://localhost:61290
+            ExternalCatalogBaseUrl: http://localhost:5090
         ports:
             - "5090:80"
         container_name: eventapi

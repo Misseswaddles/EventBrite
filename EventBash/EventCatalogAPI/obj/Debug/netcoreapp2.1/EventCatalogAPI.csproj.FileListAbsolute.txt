@@ -39,3 +39,17 @@ C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\E
 C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.dll
 C:\github_remote\Assignment3\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csprojAssemblyReference.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.deps.json
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.runtimeconfig.json
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.runtimeconfig.dev.json
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.dll
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\bin\Debug\netcoreapp2.1\EventCatalogAPI.pdb
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csprojAssemblyReference.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.csproj.CoreCompileInputs.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorAssemblyInfo.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorAssemblyInfo.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.AssemblyInfoInputs.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.AssemblyInfo.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.dll
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\EventCatalogAPI\obj\Debug\netcoreapp2.1\EventCatalogAPI.pdb
