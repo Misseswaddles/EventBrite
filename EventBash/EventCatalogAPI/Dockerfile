@@ -4,10 +4,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY ["EventCatalogAPI/EventCatalogAPI.csproj", "EventCatalogAPI/"]
-RUN dotnet restore "EventCatalogAPI/EventCatalogAPI.csproj"
+COPY ["EventCatalogAPI.csproj", "EventCatalogAPI/"]
+RUN dotnet restore EventCatalogAPI.csproj
 COPY . .
-WORKDIR "/src/EventCatalogAPI"
+WORKDIR "EventCatalogAPI"
 RUN dotnet build "EventCatalogAPI.csproj" -c Release -o /app
 
 FROM build AS publish
