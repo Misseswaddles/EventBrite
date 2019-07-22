@@ -26,13 +26,12 @@ namespace EventCatalogAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // var connectionString = Configuration["ConnectionString"];
-            
-            var server = Configuration["DatabaseServer"];
-            var database = Configuration["DatabaseName"];
-            var user = Configuration["DatabaseUser"];
-            var password = Configuration["DatabaseUserPassword"];
-            var connectionString = $"Server={server};Database={database};User ID={user};Password={password}";
+            //var connectionString = Configuration["ConnectionString"]; //uncomment for IIS express
+           var server = Configuration["DatabaseServer"]; //uncomment for Docker
+            var database = Configuration["DatabaseName"]; //uncomment for Docker
+            var user = Configuration["Databaseuser"]; //uncomment for Docker
+            var password = Configuration["DatabaseUserPassword"]; //uncomment for Docker
+            var connectionString = $"Server={server};Database={database};User ID={user};Password={password}"; //uncomment for Docker
             services.AddDbContext<EventContext>(options =>
                         options.UseSqlServer(connectionString));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
