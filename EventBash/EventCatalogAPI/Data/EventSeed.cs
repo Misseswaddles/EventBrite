@@ -33,14 +33,14 @@ namespace EventCatalogAPI.Data
                 context.EventCategories.AddRange(GetPreconfiguredEventCategories());
 
                 context.SaveChanges();
-            }
+           }
 
-           if (!context.EventItems.Any())
-            {
+       if (!context.EventItems.Any())
+           {
                 context.EventItems.AddRange(GetPreconfiguredEventItems());
 
-                context.SaveChanges();
-            }
+             context.SaveChanges();
+         }
 
 
         }
