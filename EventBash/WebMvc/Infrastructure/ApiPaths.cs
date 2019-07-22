@@ -20,9 +20,20 @@ namespace WebMvc.Infrastructure
                 return $"{baseUri}EventVenue";
             }
 
-            public static string GetAllEventItems(string baseUri, int page, int size, int? brand, int? type ) //you have to pass page and size. But brand andtype are nullable value types.
+            public static string GetAllEventItems(string baseUri, int page, int size,
+                int? category, int? venue ) //you have to pass page and size. But brand andtype are nullable value types.
             {
-                return $"{baseUri}items?pageSize={size}&pageIndex={page}";  //Need to implement brand and type
+                var filterQs = string.Empty;
+
+                if(venue.HasValue || category.HasValue)
+                {
+                    var categoryQs = (category.HasValue) ? category.Value.ToString() : "null";
+                    var venueQs = (venue.HasValue) ? venue.Value.ToString() : "null";
+
+                    filterQs = $"/category/{categoryQs}/venue/{venueQs}";
+                }
+
+                return $"{baseUri}items{filterQs}?pageSize={size}&pageIndex={page}";  //Need to implement brand and type
             }
 
         }
