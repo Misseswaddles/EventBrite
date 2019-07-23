@@ -17,7 +17,7 @@ namespace WebMvc.Infrastructure
 
             public static string GetAllVenues(string baseUri)
             {
-                return $"{baseUri}EventVenue";
+                return $"{baseUri}EventVenue"; //selvi - updated Event Venue to Eventvenues
             }
 
             public static string GetAllEventItems(string baseUri, int page, int size,
