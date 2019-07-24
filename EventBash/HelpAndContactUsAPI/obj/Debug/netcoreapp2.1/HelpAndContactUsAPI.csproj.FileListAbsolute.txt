@@ -38,3 +38,4 @@ C:\github_remote\Assignment3\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2
 C:\github_remote\Assignment3\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.RazorTargetAssemblyInfo.cache
 C:\github_remote\Assignment3\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.dll
 C:\github_remote\Assignment3\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\HelpAndContactUsAPI\obj\Debug\netcoreapp2.1\HelpAndContactUsAPI.csprojAssemblyReference.cache

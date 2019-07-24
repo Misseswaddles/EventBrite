@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj": {}
+    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj": {
+    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj",
+        "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj",
         "projectName": "WebMvc",
-        "projectPath": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj",
-        "packagesPath": "C:\\Users\\Selvanayaki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\WebMvc\\obj\\",
+        "projectPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\WebMvc\\WebMvc.csproj",
+        "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\WebMvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Selvanayaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -62,6 +62,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.7.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
             }
           },
           "imports": [

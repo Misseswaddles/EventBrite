@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebMvc.Models
 {
+    //this is your EventCatalogAPI Paginated view model for WebMvc. 
     public class Event
     {
         public int PageSize { get; set; }
