@@ -1,7 +1,7 @@
 ﻿
 @{
-    ViewData["Title"] = "Catalog";
-    @model WebMvc.ViewModels.CatalogIndexViewModel
+    ViewData["Title"] = "EventsCatalog";
+    @model WebMvc.ViewModels.EventIndexViewModel
 }
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
@@ -51,25 +51,25 @@
     <div class="container">
         <form asp-action="Index" asp-controller="Catalog" method="post">
             <label class="esh-catalog-label" data-title="brand">
-                <select asp-for="@Model.BrandFilterApplied" asp-items="@Model.Brands" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.VenueFilterApplied" asp-items="@Model.Venues" class="esh-catalog-filter"></select>
             </label>
             <label class="esh-catalog-label" data-title="type">
-                <select asp-for="@Model.TypesFilterApplied" asp-items="@Model.Types" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.CategoryFilterApplied" asp-items="@Model.Categories" class="esh-catalog-filter"></select>
             </label>
             <input class="esh-catalog-send" type="image" src="~/images/arrow-right.svg" />
         </form>
     </div>
 </section>
 <div class="container">
-    @if (Model.CatalogItems.Count() > 0)
+    @if (Model.EventItems.Count() > 0)
     {
         @Html.Partial("_pagination", Model.PaginationInfo)
 
         <div class="esh-catalog-items row">
-            @foreach (var catalogItem in Model.CatalogItems)
+            @foreach (var eventItem in Model.EventItems)
             {
                 <div class="esh-catalog-item col-md-4">
-                    @Html.Partial("_product", catalogItem)
+                    @Html.Partial("_product", eventItem)
                 </div>
             }
         </div>

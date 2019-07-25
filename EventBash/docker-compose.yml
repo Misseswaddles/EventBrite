@@ -24,7 +24,24 @@ services:
             - frontend
         depends_on:
             - mssqlserver
-        
+
+    webmvc:
+      build:
+        context: .\WebMvc
+        dockerfile: Dockerfile
+      image: jewels/webmvc
+      container_name: EventWebshop
+      environment:
+        CatalogUrl: http://eventcatalog
+        ASPNETCORE_ENVIRONMENT: Development
+      ports:
+        - "5203:80"
+      networks:
+        - frontend
+      depends_on:
+        - eventcatalog
+
+
     mssqlserver:
         image: "mcr.microsoft.com/mssql/server:2019-CTP3.1-ubuntu"
         environment:

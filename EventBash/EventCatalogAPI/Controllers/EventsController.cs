@@ -66,6 +66,52 @@ namespace EventCatalogAPI.Controllers
 
         }
 
+        //GET api/events/items?pageSize=4&pageIndex=2   //prev get for items in Events
+        // GET api/catalog/items?pageSize=10&pageIndex=2   //sister catalog for above
+
+       
+        // GET api/Catalog/Items/type/1/brand/null[?pageSize=4&pageIndex=0] //catalog, I want to create this.
+        // GET api/events/Items/category/1/venue/null[?pageSize=10&pageIndex=0] //events analog to create
+        [HttpGet]
+        [Route("[action]/EventCategory/{EventCategoryId}/EventVenue/{EventVenueId}")]
+        public async Task<IActionResult> Items(int? eventCategoryId,
+            int? eventVenueId,
+            [FromQuery] int pageSize= 6,
+            [FromQuery] int pageIndex= 0)
+        {
+            var root = (IQueryable<EventItem>)_context.EventItems;
+            
+            if(eventCategoryId.HasValue)
+            {
+                root = root.Where(c => c.EventCategoryId == eventCategoryId);
+            }
+
+            if(eventVenueId.HasValue)
+            {
+                root = root.Where(c => c.EventVenueId == eventVenueId);
+            }
+
+            var totalItems = await root.LongCountAsync();
+
+            var itemsOnPage = await root
+                                .OrderBy(c => c.EventName)
+                                .Skip(pageSize * pageIndex)
+                                .Take(pageSize)
+                                .ToListAsync();
+            itemsOnPage = ChangePictureUrl(itemsOnPage);
+            var model = new PaginatedItemsViewModel<EventItem>
+            {
+                PageSize = pageSize,
+                PageIndex = pageIndex,
+                Count = totalItems,
+                Data = itemsOnPage
+            };
+
+            return Ok(model);
+        }
+
+
+
         //returns the list of event categories in alphabetical order
         [HttpGet]
         [Route("[action]")]
@@ -119,16 +165,7 @@ namespace EventCatalogAPI.Controllers
                         
         }
 
-        // GET api/Catalog/Items/type/1/brand/null[?pageSize=4&pageIndex=0]
-        [HttpGet]
-        [Route("[action]/type/{catalogTypeId}/brand/{catalogBrandId}")]
-        public async Task<IActionResult> Items(int? catalogTypeId,
-            int? catalogBrandId,
-            [FromQuery] int pageSize = 6,
-            [FromQuery] int pageIndex = 0)
 
-      //GET api/events/Items/category/1/venue/null[?pageSize=4&pageIndex=0]
-      //GET api/events/items?pageSize=4&pageIndex=2
 
 
 

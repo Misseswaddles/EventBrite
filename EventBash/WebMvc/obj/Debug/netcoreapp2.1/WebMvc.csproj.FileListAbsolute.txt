@@ -30,3 +30,4 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CopyComplete
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\EventsCatalog\Index.g.cshtml.cs

@@ -4,10 +4,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY ["WebMvc/WebMvc.csproj", "WebMvc/"]
+COPY ["WebMvc.csproj", "WebMvc/"]
 RUN dotnet restore "WebMvc/WebMvc.csproj"
 COPY . .
-WORKDIR "/src/WebMvc"
+WORKDIR "WebMvc"
 RUN dotnet build "WebMvc.csproj" -c Release -o /app
 
 FROM build AS publish
