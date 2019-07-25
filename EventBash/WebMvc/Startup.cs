@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebMvc.Infrastructure;
+using WebMvc.Services;
 
 namespace WebMvc
 {
@@ -32,6 +34,10 @@ namespace WebMvc
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSingleton<IHttpClient, CustomHttpClient>(); //you want one and only one service
+
+            services.AddTransient<IEventService, EventService>(); //if you need more than one catalog service, you can create as needed.
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

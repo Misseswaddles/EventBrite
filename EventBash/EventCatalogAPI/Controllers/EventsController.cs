@@ -119,6 +119,16 @@ namespace EventCatalogAPI.Controllers
                         
         }
 
+        // GET api/Catalog/Items/type/1/brand/null[?pageSize=4&pageIndex=0]
+        [HttpGet]
+        [Route("[action]/type/{catalogTypeId}/brand/{catalogBrandId}")]
+        public async Task<IActionResult> Items(int? catalogTypeId,
+            int? catalogBrandId,
+            [FromQuery] int pageSize = 6,
+            [FromQuery] int pageIndex = 0)
+
+      //GET api/events/Items/category/1/venue/null[?pageSize=4&pageIndex=0]
+      //GET api/events/items?pageSize=4&pageIndex=2
 
 
 
