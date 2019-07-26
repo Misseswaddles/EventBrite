@@ -49,7 +49,7 @@
 
 <section class="esh-catalog-filters">
     <div class="container">
-        <form asp-action="Index" asp-controller="Catalog" method="post">
+        <form asp-action="Index" asp-controller="EventsCatalog" method="post">
             <label class="esh-catalog-label" data-title="brand">
                 <select asp-for="@Model.VenueFilterApplied" asp-items="@Model.Venues" class="esh-catalog-filter"></select>
             </label>
@@ -69,7 +69,7 @@
             @foreach (var eventItem in Model.EventItems)
             {
                 <div class="esh-catalog-item col-md-4">
-                    @Html.Partial("_product", eventItem)
+                    @Html.Partial("_Events", eventItem)
                 </div>
             }
         </div>
