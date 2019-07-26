@@ -13,12 +13,3 @@ EventBash/HelpAndContactUs/bin/Debug/netcoreapp2.1
 EventBash/UserAPI/obj
 EventBash/UserAPI/bin/Debug/netcoreapp2.1
 EventBash/WebMvc/obj
-*.dll
-*.cache
-*.ide-shm
-*.ide-wal
-*.json
-*.dll
-*.pdb
-EventBash/.vs/EventBash/v16/.suo
-EventBash/.vs/EventBash/v16/Server/sqlite3/storage.ide
