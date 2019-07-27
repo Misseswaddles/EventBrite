@@ -73,7 +73,11 @@ namespace EventCatalogAPI.Controllers
         // GET api/Catalog/Items/type/1/brand/null[?pageSize=4&pageIndex=0] //catalog, I want to create this.
         // GET api/events/Items/category/1/venue/null[?pageSize=10&pageIndex=0] //events analog to create
         [HttpGet]
-        [Route("[action]/EventCategory/{EventCategoryId}/EventVenue/{EventVenueId}")]
+        //[Route("[action]/EventCategory/{EventCategoryId}/EventVenue/{EventVenueId}")]
+       [Route("[action]/category/{EventCategoryId}/venue/{EventVenueId}")] //Selvi - Updated as per Kal's code and below path
+        // filterQs = $"/category/{categoryQs}/venue/{venueQs}"; Selvi - Reference from apipath.cs
+
+
         public async Task<IActionResult> Items(int? eventCategoryId,
             int? eventVenueId,
             [FromQuery] int pageSize= 6,
