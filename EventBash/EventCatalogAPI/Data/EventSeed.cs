@@ -20,12 +20,14 @@ namespace EventCatalogAPI.Data
 
                 context.SaveChanges();
             }
+            //Selvi - Else condition is executed always as its not within braces of if statement
+            /*
             else
             {
                 context.EventVenues.AttachRange(GetPreconfiguredEventVenues());
                 context.SaveChanges();
             }
-            
+            */
             
 
            if (!context.EventCategories.Any())

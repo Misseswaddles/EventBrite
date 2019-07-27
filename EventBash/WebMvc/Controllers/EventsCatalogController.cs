@@ -41,7 +41,6 @@ namespace WebMvc.Controllers
                 Venues = await _service.GetVenuesAsync(),
                 CategoryFilterApplied = category ?? 0,
                 VenueFilterApplied = venue ?? 0
-
             };
             vm.PaginationInfo.Previous = (vm.PaginationInfo.ActualPage == 0) ? "is-disabled" : " ";
             vm.PaginationInfo.Next = (vm.PaginationInfo.ActualPage == vm.PaginationInfo.TotalPages - 1) ? "is-disabled" : "";
