@@ -85,12 +85,12 @@ namespace EventCatalogAPI.Controllers
         {
             var root = (IQueryable<EventItem>)_context.EventItems;
             
-            if(eventCategoryId.HasValue)
+            if(eventCategoryId.HasValue && eventCategoryId.Value !=0 )
             {
                 root = root.Where(c => c.EventCategoryId == eventCategoryId);
             }
 
-            if(eventVenueId.HasValue)
+            if(eventVenueId.HasValue && eventVenueId.Value != 0)
             {
                 root = root.Where(c => c.EventVenueId == eventVenueId);
             }

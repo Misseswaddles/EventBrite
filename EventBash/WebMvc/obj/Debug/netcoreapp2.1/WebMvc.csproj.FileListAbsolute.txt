@@ -75,7 +75,6 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.pdb
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.Views.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.Views.pdb
-C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csprojAssemblyReference.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CoreCompileInputs.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cs

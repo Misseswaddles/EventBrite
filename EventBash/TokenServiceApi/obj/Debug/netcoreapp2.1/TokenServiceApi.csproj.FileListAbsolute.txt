@@ -111,7 +111,6 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\bin\Debug\ne
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.pdb
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.Views.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.Views.pdb
-C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csprojAssemblyReference.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csproj.CoreCompileInputs.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.RazorAssemblyInfo.cache
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.RazorAssemblyInfo.cs

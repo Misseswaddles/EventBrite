@@ -50,7 +50,7 @@ services:
         container_name: EventWebshop
         environment:
             EventCatalogUrl: http://eventcatalog
-            IdentityUrl: http://192.168.254.18:5080
+            IdentityUrl: http://192.168.3.150:5080
             CallBackUrl: http://localhost:5070
             StripePublicKey: pk_test_jZlpubvlPmcV6QJPReImelQy
             StripePrivateKey: sk_test_bSHT9qxwjpyCOP0qdAvHLfAA

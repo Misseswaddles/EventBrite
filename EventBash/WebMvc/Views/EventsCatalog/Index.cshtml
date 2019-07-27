@@ -11,7 +11,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/images/banner.png" alt="Don't miss out any events" class="img-responsive"/>
+            <img src="~/images/banner.png" alt="Don't miss out any events" class="img"/>
             <div class="carousel-caption" role="option">
                 <p>
                     Don't miss out any events
@@ -48,12 +48,12 @@
 
 <section class="esh-catalog-filters">
     <div class="container">
-        <form asp-action="Index" asp-controller="EventsCatalog" method="post">
+        <form asp-action="Index" asp-controller="EventsCatalog" method="get">
             <label class="esh-catalog-label" data-title="Venue">
-                <select asp-for="@Model.VenueFilterApplied" asp-items="@Model.Venues" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.venue" asp-items="@Model.Venues" class="esh-catalog-filter"></select>
             </label>
             <label class="esh-catalog-label" data-title="Category">
-                <select asp-for="@Model.CategoryFilterApplied" asp-items="@Model.Categories" class="esh-catalog-filter"></select>
+                <select asp-for="@Model.category" asp-items="@Model.Categories" class="esh-catalog-filter"></select>
             </label>
             <input class="esh-catalog-send" type="image" src="~/images/arrow-right.svg" />
         </form>

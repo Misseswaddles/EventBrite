@@ -17,8 +17,8 @@ namespace WebMvc.ViewModels
 
         public IEnumerable<EventItem> EventItems { get; set; }
 
-        public int? CategoryFilterApplied { get; set; }
+        public int? category { get; set; }
 
-        public int? VenueFilterApplied { get; set; }
+        public int? venue { get; set; }
     }
 }
