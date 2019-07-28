@@ -156,3 +156,4 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\ne
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.pdb
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csproj.CopyComplete
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csprojAssemblyReference.cache

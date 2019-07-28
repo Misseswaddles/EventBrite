@@ -104,3 +104,4 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.pdb
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CopyComplete
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csprojAssemblyReference.cache
