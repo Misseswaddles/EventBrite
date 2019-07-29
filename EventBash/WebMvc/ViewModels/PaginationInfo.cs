@@ -10,7 +10,7 @@ namespace WebMvc.ViewModels
     {
         public long TotalItems { get; set; }
 
-        public int ItemsPerPage { get; set; }
+        public long ItemsPerPage { get; set; }
 
         public int ActualPage { get; set; }
 

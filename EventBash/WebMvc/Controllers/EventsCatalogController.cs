@@ -30,7 +30,7 @@ namespace WebMvc.Controllers
                 PaginationInfo = new PaginationInfo
                 {
                     ActualPage = page ?? 0,
-                    ItemsPerPage = itemsOnPage,
+                    ItemsPerPage = (eventCatalog.Count < itemsOnPage) ? eventCatalog.Count : itemsOnPage,
                     TotalItems = eventCatalog.Count,
                     TotalPages = (int)Math.Ceiling((decimal)eventCatalog.Count / itemsOnPage),
 
