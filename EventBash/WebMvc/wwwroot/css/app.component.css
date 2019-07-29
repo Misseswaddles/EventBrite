@@ -1,10 +1,11 @@
 .esh-app-footer {
-    background-color: #000000;
-    border-top: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    border-top: 5px solid #00A69C;
     margin-top: 2.5rem;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
     width: 100%;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .esh-app-footer-brand {
