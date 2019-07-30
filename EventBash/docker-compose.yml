@@ -25,6 +25,24 @@ services:
         depends_on:
             - mssqlserver
 
+    cart:
+        build:
+            context: .\CartApi
+            dockerfile: Dockerfile
+        image: eventbrite/cartapi
+        environment:
+            IdentityUrl: http://10.0.0.94:5080
+            ConnectionString: basket.data
+        ports:
+            - "5065:80"
+        container_name: cartapi
+        networks:
+            - backend
+            - frontend
+        depends_on:
+            - basket.data
+            - tokenserver
+
     tokenserver:
         build:
             context: .\TokenServiceApi
@@ -71,5 +89,12 @@ services:
         container_name: eventdb
         ports:
             - "1443:1433"
+        networks:
+            - backend
+
+    basket.data:
+        image: redis
+        ports:
+            - "6378:6379"
         networks:
             - backend
