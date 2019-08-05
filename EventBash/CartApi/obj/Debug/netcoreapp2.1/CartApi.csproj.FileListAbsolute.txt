@@ -12,3 +12,16 @@ C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.pdb
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.dll
 C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.deps.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.runtimeconfig.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.runtimeconfig.dev.json
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.dll
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\bin\Debug\netcoreapp2.1\CartApi.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.csproj.CoreCompileInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.RazorAssemblyInfo.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.RazorAssemblyInfo.cs
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.AssemblyInfoInputs.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.AssemblyInfo.cs
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.RazorTargetAssemblyInfo.cache
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.dll
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\CartApi\obj\Debug\netcoreapp2.1\CartApi.pdb

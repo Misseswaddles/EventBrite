@@ -13,9 +13,22 @@
                     Previous
                 </a>
 
-                <span class="esh-pager-item">
-                    Showing @Model.ItemsPerPage of @Model.TotalItems events - Page @(Model.ActualPage + 1) - @Model.TotalPages
-                </span>
+                @if (@Model.ActualPage == @Model.TotalPages -1)
+                {
+
+                    <span class="esh-pager-item">
+                         Showing @(  Model.TotalItems - (Model.ItemsPerPage * (Model.TotalPages -1))) of @Model.TotalItems events - Page @(Model.ActualPage + 1) - @Model.TotalPages
+                    </span>
+
+                }
+                else
+                {
+
+                    <span class="esh-pager-item">
+                        Showing @Model.ItemsPerPage of @Model.TotalItems events - Page @(Model.ActualPage + 1) - @Model.TotalPages
+                    </span>
+                }
+
 
                 <a class="esh-pager-item esh-pager-item--navigable @Model.Next"
                    id="Next"

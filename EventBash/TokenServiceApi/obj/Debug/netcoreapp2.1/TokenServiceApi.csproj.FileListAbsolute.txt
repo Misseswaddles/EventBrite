@@ -164,6 +164,7 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\bin\Debug\n
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.Views.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\bin\Debug\netcoreapp2.1\TokenServiceApi.Views.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csprojAssemblyReference.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csproj.CoreCompileInputs.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.RazorAssemblyInfo.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.RazorAssemblyInfo.cs
@@ -209,4 +210,3 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\n
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csproj.CopyComplete
-C:\Users\keyro\Documents\Github\EventBrite\EventBash\TokenServiceApi\obj\Debug\netcoreapp2.1\TokenServiceApi.csprojAssemblyReference.cache
