@@ -22,7 +22,7 @@ namespace WebMvc.Infrastructure
           string authorizationToken = null,  //for token service
           string authorizationMethod = "Bearer"); //for token service
 
-        Task<HttpResponseMessage> DeleteAsync<T>(string uri,
+        Task<HttpResponseMessage> DeleteAsync(string uri,
           string authorizationToken = null,  //for token service
           string authorizationMethod = "Bearer"); //for token service
     }

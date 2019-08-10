@@ -31,7 +31,7 @@ services:
             dockerfile: Dockerfile
         image: eventbrite/cartapi
         environment:
-            IdentityUrl: http://192.168.254.18:5080
+            IdentityUrl: http://10.0.0.94:5080
             ConnectionString: basket.data
         ports:
             - "5065:80"
@@ -49,7 +49,7 @@ services:
             dockerfile: Dockerfile
         image: eventbrite/orderapi
         environment:
-            IdentityUrl: http://192.168.254.18:5080
+            IdentityUrl: http://10.0.0.94:5080
             SQLSERVER_HOST: eventdb
             SA_PASSWORD: EventApi(!)
             DATABASE: OrdersDb
