@@ -11,6 +11,7 @@ services:
             dockerfile: Dockerfile
         image: eventbrite/eventapi
         environment:
+            ASPNETCORE_ENVIRONMENT: Development
             DatabaseServer: mssqlserver
             DatabaseName: EventDB
             DatabaseUser: sa
@@ -31,6 +32,7 @@ services:
             dockerfile: Dockerfile
         image: eventbrite/cartapi
         environment:
+            ASPNETCORE_ENVIRONMENT: Development
             IdentityUrl: http://10.0.0.94:5080
             ConnectionString: basket.data
         ports:
@@ -50,6 +52,7 @@ services:
             dockerfile: Dockerfile
         image: eventbrite/orderapi
         environment:
+            ASPNETCORE_ENVIRONMENT: Development
             IdentityUrl: http://10.0.0.94:5080
             SQLSERVER_HOST: eventdb
             SA_PASSWORD: EventApi(!)
