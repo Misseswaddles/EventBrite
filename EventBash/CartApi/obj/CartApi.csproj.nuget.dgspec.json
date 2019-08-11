@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\CartApi\\CartApi.csproj": {}
+    "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\CartApi\\CartApi.csproj": {
+    "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\CartApi\\CartApi.csproj",
+        "projectUniqueName": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj",
         "projectName": "CartApi",
-        "projectPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\CartApi\\CartApi.csproj",
-        "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\CartApi\\obj\\",
+        "projectPath": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj",
+        "packagesPath": "C:\\Users\\rsrir\\.nuget\\packages\\",
+        "outputPath": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rsrir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -43,6 +43,22 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "MassTransit.Autofac": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -55,6 +71,7 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -66,6 +83,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.9, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.1.0, )"
             },
             "StackExchange.Redis": {
               "target": "Package",

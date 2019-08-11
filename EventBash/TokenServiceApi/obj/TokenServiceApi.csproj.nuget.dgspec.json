@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj": {}
+    "C:\\github_remote\\Assignment3\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj": {
+    "C:\\github_remote\\Assignment3\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj",
+        "projectUniqueName": "C:\\github_remote\\Assignment3\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj",
         "projectName": "TokenServiceApi",
-        "projectPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj",
-        "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\TokenServiceApi\\obj\\",
+        "projectPath": "C:\\github_remote\\Assignment3\\EventBash\\TokenServiceApi\\TokenServiceApi.csproj",
+        "packagesPath": "C:\\Users\\rsrir\\.nuget\\packages\\",
+        "outputPath": "C:\\github_remote\\Assignment3\\EventBash\\TokenServiceApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rsrir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -58,6 +58,7 @@
               "autoReferenced": true
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

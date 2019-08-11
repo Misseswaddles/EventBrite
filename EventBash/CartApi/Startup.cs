@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using CartApi.Infrastructure.Filters;
+using CartApi.Messaging.Consumers;
+using CartApi.Models;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using StackExchange.Redis;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CartApi
 {
@@ -23,9 +31,10 @@ namespace CartApi
         }
 
         public IConfiguration Configuration { get; }
+        public IContainer ApplicationContainer { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton<ConnectionMultiplexer>(sp =>
@@ -39,7 +48,7 @@ namespace CartApi
             });
             ConfigureAuthService(services);
             //The below code is for swagger.
-           /* services.AddSwaggerGen(options =>
+            services.AddSwaggerGen(options =>
             {
                 options.DescribeAllEnumsAsStrings();
                 options.SwaggerDoc("v1", new Info
@@ -85,7 +94,7 @@ namespace CartApi
 
 
                     // https://stackoverflow.com/questions/39573721/disable-round-robin-pattern-and-use-fanout-on-masstransit
-                    cfg.ReceiveEndpoint(host, "JewelsOncontainers" + Guid.NewGuid().ToString(), e =>
+                    cfg.ReceiveEndpoint(host, "EventBash" + Guid.NewGuid().ToString(), e =>
                     {
                         e.LoadFrom(context);
 
@@ -101,7 +110,7 @@ namespace CartApi
             builder.Populate(services);
             ApplicationContainer = builder.Build();
 
-            return new AutofacServiceProvider(ApplicationContainer);*/
+            return new AutofacServiceProvider(ApplicationContainer);
         }
 
         private void ConfigureAuthService(IServiceCollection services)

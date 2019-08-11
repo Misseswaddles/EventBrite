@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\OrderApi\\OrderApi.csproj": {}
+    "C:\\github_remote\\Assignment3\\EventBash\\OrderApi\\OrderApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\OrderApi\\OrderApi.csproj": {
+    "C:\\github_remote\\Assignment3\\EventBash\\OrderApi\\OrderApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\OrderApi\\OrderApi.csproj",
+        "projectUniqueName": "C:\\github_remote\\Assignment3\\EventBash\\OrderApi\\OrderApi.csproj",
         "projectName": "OrderApi",
-        "projectPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\OrderApi\\OrderApi.csproj",
-        "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keyro\\Documents\\Github\\EventBrite\\EventBash\\OrderApi\\obj\\",
+        "projectPath": "C:\\github_remote\\Assignment3\\EventBash\\OrderApi\\OrderApi.csproj",
+        "packagesPath": "C:\\Users\\rsrir\\.nuget\\packages\\",
+        "outputPath": "C:\\github_remote\\Assignment3\\EventBash\\OrderApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rsrir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -68,6 +68,7 @@
               "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.0, )",
               "autoReferenced": true
