@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj": {}
+    "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\CartApi\\CartApi.csproj": {}
   },
   "projects": {
-    "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj": {
+    "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\CartApi\\CartApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj",
+        "projectUniqueName": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\CartApi\\CartApi.csproj",
         "projectName": "CartApi",
-        "projectPath": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\CartApi.csproj",
-        "packagesPath": "C:\\Users\\rsrir\\.nuget\\packages\\",
-        "outputPath": "C:\\github_remote\\Assignment3\\EventBash\\CartApi\\obj\\",
+        "projectPath": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\CartApi\\CartApi.csproj",
+        "packagesPath": "C:\\Users\\Selvanayaki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Selvanayaki\\GitCollab\\EventBrite\\EventBash\\CartApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rsrir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Selvanayaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,7 +71,6 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

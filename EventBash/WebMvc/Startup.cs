@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using WebMvc.Infrastructure;
+using WebMvc.Models;
 using WebMvc.Services;
 
 namespace WebMvc
@@ -37,6 +38,12 @@ namespace WebMvc
             });
             //code related to authontication token service. 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
+           // services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IIdentityService<ApplicationUser>, IdentityService>();
+            services.AddTransient<ICartService, CartService>();
+            services.AddTransient<IOrderService, OrderService>();
+
             var identityUrl = Configuration.GetValue<string>("IdentityUrl");
             var callBackUrl = Configuration.GetValue<string>("CallBackUrl");
             services.AddAuthentication(options =>
@@ -60,6 +67,8 @@ namespace WebMvc
                 options.Scope.Add("openid");
                 options.Scope.Add("profile");
                 options.Scope.Add("offline_access");
+                options.Scope.Add("basket");
+                options.Scope.Add("order");
                 //options.Configuration = new OpenIdConnectConfiguration();
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {

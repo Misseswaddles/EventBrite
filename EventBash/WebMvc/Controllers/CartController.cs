@@ -78,7 +78,7 @@ namespace WebMvc.Controllers
 
         }
 
-            public async Task<IActionResult> AddToCart(CatalogItem productDetails)
+            public async Task<IActionResult> AddToCart(EventItem productDetails) //updated CatalogItem to EventItem
         {
             try
             {
@@ -89,14 +89,14 @@ namespace WebMvc.Controllers
                     {
                         Id = Guid.NewGuid().ToString(),
                         Quantity = 1,
-                        ProductName = productDetails.Name,
-                        PictureUrl = productDetails.PictureUrl,
-                        UnitPrice = productDetails.Price,
+                        ProductName = productDetails.EventName,
+                        PictureUrl = productDetails.EventUrl,
+                        UnitPrice = productDetails.EventCost,
                         ProductId = productDetails.Id
                     };
                     await _cartService.AddItemToCart(user, product);
                 }
-                return RedirectToAction("Index", "Catalog");
+               // return RedirectToAction("Index", "Catalog"); duplicate to the below return statement after catch
             }
             catch (BrokenCircuitException)
             {

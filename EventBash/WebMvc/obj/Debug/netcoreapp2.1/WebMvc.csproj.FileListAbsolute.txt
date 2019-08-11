@@ -77,3 +77,13 @@ C:\github_remote\Assignment3\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.Raz
 C:\github_remote\Assignment3\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cs
 C:\github_remote\Assignment3\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfoInputs.cache
 C:\github_remote\Assignment3\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfo.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\Complete.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\Create.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\Detail.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\Index.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\Orders.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Order\_OrderItems.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CartList\Default.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Cart\Default.g.cshtml.cs
+C:\Users\Selvanayaki\GitCollab\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Header.g.cshtml.cs
