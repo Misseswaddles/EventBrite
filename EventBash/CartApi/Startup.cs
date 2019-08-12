@@ -9,6 +9,7 @@ using CartApi.Infrastructure.Filters;
 using CartApi.Messaging.Consumers;
 using CartApi.Models;
 using MassTransit;
+using MassTransit.Util;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -132,15 +133,50 @@ namespace CartApi
                 options.Audience = "basket";
             });
         }
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            var pathBase = Configuration["PATH_BASE"];
+            if (!string.IsNullOrEmpty(pathBase))
+            {
+                app.UsePathBase(pathBase);
+            }
 
-            app.UseMvc();
+            app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
+            app.UseAuthentication();
+
+            app.UseMvcWithDefaultRoute();
+
+            /*app.UseSwagger()
+               .UseSwaggerUI(c =>
+               {
+                   c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "CartApi V1");
+                   //c.ConfigureOAuth2("basketswaggerui", "", "", "Basket Swagger UI");
+               }); */
+            var bus = ApplicationContainer.Resolve<IBusControl>();
+            var busHandle = TaskUtil.Await(() => bus.StartAsync());
+            lifetime.ApplicationStopping.Register(() => busHandle.Stop());
         }
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /*
+         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+         {
+             if (env.IsDevelopment())
+             {
+                 app.UseDeveloperExceptionPage();
+             }
+
+             app.UseMvc();
+
+             //just added
+             var bus = ApplicationContainer.Resolve<IBusControl>();
+             var busHandle = TaskUtil.Await(() => bus.StartAsync());
+             lifetime.ApplicationStopping.Register(() => busHandle.Stop());
+         } */
     }
 }

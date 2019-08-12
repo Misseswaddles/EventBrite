@@ -58,6 +58,7 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.Views.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\bin\Debug\netcoreapp2.1\WebMvc.Views.pdb
+C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csprojAssemblyReference.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CoreCompileInputs.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cache
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cs
@@ -97,4 +98,3 @@ C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.dll
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.pdb
 C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csproj.CopyComplete
-C:\Users\keyro\Documents\Github\EventBrite\EventBash\WebMvc\obj\Debug\netcoreapp2.1\WebMvc.csprojAssemblyReference.cache
