@@ -37,6 +37,10 @@ namespace CartApi.Controllers
         [ProducesResponseType(typeof(Cart), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Post([FromBody]Cart value)
         {
+            System.Diagnostics.Debug.WriteLine("\n\n The value passed to CartAPI Cartcontroller is:");
+            System.Diagnostics.Debug.WriteLine(value.BuyerId);
+            System.Diagnostics.Debug.WriteLine(value.Items);
+            System.Diagnostics.Debug.WriteLine("\n\n");
             var basket = await _repository.UpdateCartAsync(value);
             return Ok(basket);
         }

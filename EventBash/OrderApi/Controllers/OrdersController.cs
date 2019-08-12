@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 using MassTransit;
 using Common.Messaging;
+using Microsoft.Extensions.Configuration;
 
 namespace ShoesOnContainers.Services.OrderApi.Controllers
 {
@@ -22,16 +23,21 @@ namespace ShoesOnContainers.Services.OrderApi.Controllers
     {
 
         private readonly OrdersContext _ordersContext;
-      private readonly IOptionsSnapshot<OrderSettings> _settings;
-
+        //private readonly IOptionsSnapshot<OrderSettings> _settings;
+        private readonly IConfiguration _config;
 
         private readonly ILogger<OrdersController> _logger;
         private IBus _bus;
 
-        public OrdersController(OrdersContext ordersContext, ILogger<OrdersController> logger, IOptionsSnapshot<OrderSettings> settings, IBus bus)
+        public OrdersController(OrdersContext ordersContext,
+                              ILogger<OrdersController> logger,
+                              IConfiguration config,
+                              //IOptionsSnapshot<OrderSettings> settings, 
+                              IBus bus)
         {
-            _settings = settings;
-           // _ordersContext = ordersContext;
+            //_settings = settings;
+            _config = config;
+            // _ordersContext = ordersContext;
             _ordersContext = ordersContext ?? throw new ArgumentNullException(nameof(ordersContext));
           
             ((DbContext)ordersContext).ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
@@ -50,7 +56,8 @@ namespace ShoesOnContainers.Services.OrderApi.Controllers
         public async Task<IActionResult> CreateOrder([FromBody] Order order)
         {
             var envs = Environment.GetEnvironmentVariables();
-            var conString = _settings.Value.ConnectionString;
+            // var conString = _settings.Value.ConnectionString;
+            var conString = _config["ConnectionString"];
             _logger.LogInformation($"{conString}");
 
             order.OrderStatus = OrderStatus.Preparing;

@@ -25,7 +25,10 @@ namespace WebMvc.Services
         private readonly string _remoteServiceBaseUrl;
         private IHttpContextAccessor _httpContextAccesor;
         private readonly ILogger _logger;
-        public CartService(IConfiguration config, IHttpContextAccessor httpContextAccesor, IHttpClient httpClient, ILoggerFactory logger)
+        public CartService(IConfiguration config, 
+                 IHttpContextAccessor httpContextAccesor, 
+                 IHttpClient httpClient, 
+                 ILoggerFactory logger)
         {
             _config = config;
             _remoteServiceBaseUrl = $"{_config["CartUrl"]}/api/v1/cart";
@@ -37,28 +40,32 @@ namespace WebMvc.Services
 
         public async Task AddItemToCart(ApplicationUser user, CartItem product)
         {
+
             var cart = await GetCart(user);
             _logger.LogDebug("User Name: " + user.Id);
             if (cart == null)
             {
+                System.Diagnostics.Debug.WriteLine("cart was null. Cart Svc line 48");
                 cart = new Cart()
                 {
                     BuyerId = user.Id,
                     Items = new List<CartItem>()
                 };
             }
+            System.Diagnostics.Debug.WriteLine("cart has something. Cart Svc line 55");
             var basketItem = cart.Items
                 .Where(p => p.ProductId == product.ProductId)
                 .FirstOrDefault();
             if (basketItem == null)
             {
+                System.Diagnostics.Debug.WriteLine("Basket was empty, so add product. Cart Svc line 61");
                 cart.Items.Add(product);
+                System.Diagnostics.Debug.WriteLine("Basket was empty, product successfully added. Cart Svc line 63");
             }
             else
             {
                 basketItem.Quantity += 1;
             }
-
 
             await UpdateCart(cart);
         }

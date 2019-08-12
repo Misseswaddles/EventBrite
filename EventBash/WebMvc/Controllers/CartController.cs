@@ -10,8 +10,7 @@ using WebMvc.Services;
 using WebMvc.Models;
 using WebMvc.Models.CartModels;
 using Polly.CircuitBreaker;
-using WebMvc.Services;
-using WebMvc.Models;
+
 
 namespace WebMvc.Controllers
 {
@@ -80,6 +79,7 @@ namespace WebMvc.Controllers
 
             public async Task<IActionResult> AddToCart(EventItem productDetails) //updated CatalogItem to EventItem
         {
+            
             try
             {
                 if (productDetails.Id != null)
@@ -90,7 +90,7 @@ namespace WebMvc.Controllers
                         Id = Guid.NewGuid().ToString(),
                         Quantity = 1,
                         ProductName = productDetails.EventName,
-                        PictureUrl = productDetails.EventUrl,
+                        PictureUrl = productDetails.EventPictureUrl,
                         UnitPrice = productDetails.EventCost,
                         ProductId = productDetails.Id
                     };
@@ -100,11 +100,12 @@ namespace WebMvc.Controllers
             }
             catch (BrokenCircuitException)
             {
+               
                 // Catch error when CartApi is in circuit-opened mode                 
                 HandleBrokenCircuitException();
             }
 
-            return RedirectToAction("Index", "Catalog");
+            return RedirectToAction("Index", "EventsCatalog");
 
         }
         //public async Task WriteOutIdentityInfo()
